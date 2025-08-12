@@ -1,4 +1,4 @@
-# Vanilla App Template
+# html_css_team_project
 
 This project was created using Vite. For familiarization and configuration of
 additional features [refer to the documentation](https://vitejs.dev/).
@@ -41,7 +41,7 @@ to GitHub.
    `npm install`.
 3. Start the development mode by running the command `npm run dev` in the
    terminal.
-4. Navigate in the browser to [http://localhost:5173](http://localhost:5173).
+4. Navigate in the browser to [http://localhost:7777](http://localhost:7777).
    This page will automatically reload after saving changes to the project
    files.
 

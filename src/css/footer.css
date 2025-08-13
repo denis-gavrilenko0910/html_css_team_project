@@ -5,16 +5,16 @@
 }
 
 .footer-container {
-  margin-top: 64px;
-  margin-left: 128px;
-  margin-right: 128px;
+  margin-top: 4rem; /* Изменено с 64px */
+  margin-left: 8vw; /* Изменено с 128px */
+  margin-right: 8vw; /* Изменено с 128px */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .footer-left {
-  margin-bottom: 79px;
+  margin-bottom: 5rem; /* Изменено с 79px */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,7 +29,7 @@
 }
 
 .logo-span { color: #4DC274; }
-.footer-address { margin-top: 32px; }
+.footer-address { margin-top: 2rem; } /* Изменено с 32px */
 
 .address-list {
   display: flex;
@@ -41,7 +41,7 @@
 .address-label {
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em; /* Исправлено */
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -50,7 +50,7 @@
 .contact-link {
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em; /* Исправлено */
   font-weight: 600;
   color: white;
   font-style: normal;
@@ -72,20 +72,23 @@
   position: relative;
   display: block;
   color: white;
+  outline: none; /* Убираем стандартный outline для кастомного стиля фокуса */
 }
 
 .footer-nav .nav-list li .nav-link::after {
   content: '';
   position: absolute;
-  width: 37px; 
-  height: 2px; 
-  bottom: -5px; 
+  width: 37px;
+  height: 2px;
+  bottom: -5px;
   left: 19px;
-  background-color: rgba(255, 255, 255, 0); 
+  background-color: rgba(255, 255, 255, 0);
   transition: background-color 0.25s ease-out;
 }
 
-.footer-nav .nav-list li .nav-link:hover::after {
+/* Добавлены стили для :focus */
+.footer-nav .nav-list li .nav-link:hover::after,
+.footer-nav .nav-list li .nav-link:focus::after {
   background-color: #4DC274;
 }
 
@@ -104,28 +107,33 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   transition: border-color 0.3s ease;
+  outline: none; /* Убираем стандартный outline для кастомного стиля фокуса */
 }
 
-.social-link:hover {
+/* Добавлены стили для :focus */
+.social-link:hover,
+.social-link:focus {
   border: 1px solid rgba(77, 194, 116, 0.1);
-} 
+}
 
 .social-icon {
   fill: #F3F5F6;
-    transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
 }
 
-.social-icon:hover {
+/* Изменено для реакции на фокус родителя */
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
   fill: #4DC274;
 }
 
 .footer-bottom {
-  margin: 0 128px 0 128px;
+  margin: 0 8vw; /* Изменено с 128px */
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 23px 0 23px 0;
+  padding: 1.5rem 0; /* Изменено с 23px */
 }
 
 .footer-copyright {
@@ -133,7 +141,7 @@
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em; /* Исправлено */
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -149,45 +157,45 @@
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em; /* Исправлено */
   color: rgba(255, 255, 255, 0.6);
 }
 
 @media (max-width: 768px) {
   .footer-container {
-    margin: 32px 32px 0 32px;
+    margin: 2rem 4vw 0 4vw; /* Изменено с 32px */
   }
 
   .footer-bottom {
-    margin: 0 32px 0 32px;
+    margin: 0 4vw; /* Изменено с 32px */
   }
 }
 
 @media (max-width: 375px) {
   .footer-container {
-    margin: 40px 20px 0 20px;
+    margin: 2.5rem 5vw 0 5vw; /* Изменено с 40px 20px */
     display: block;
   }
 
   .footer-left {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* Изменено с 40px */
   }
 
   .footer-address {
-    margin-top: 20px;
+    margin-top: 1.25rem; /* Изменено с 20px */
   }
 
   .footer-nav {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* Изменено с 40px */
   }
 
   .footer-bottom {
-    margin: 40px 32px 0 32px;
+    margin: 2.5rem 5vw 0 5vw; /* Изменено с 40px 32px */
     flex-direction: column;
     align-items: baseline;
   }
 
   .footer-policy {
-    margin-top: 12px;
+    margin-top: 0.75rem; /* Изменено с 12px */
   }
 }

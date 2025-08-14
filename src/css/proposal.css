@@ -1,8 +1,75 @@
-.proposal_h2 {}
+.visually_hidden{
+  visibility: hidden;
+}
 
-.proposal_ul {}
+.package_content{
+  background: linear-gradient(to right, #4DC274, #BEE8CC);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 
-.proposal_li {}
+.package_master{
+  display: flex;
+  flex-direction: column;
+  color:#FFFFFF;
+  font-family: "Manrope", sans-serif;
+  font-size: 38px;
+}
+
+.green-text{
+  color: #BEE8CC;
+}
+
+.package_details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 400px;
+  background-color:#FFFFFF;
+  margin-bottom: 10px;
+  border-radius: 16px;
+
+}
+
+.power_of_english{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.check_mark{
+  width: 24px;
+  height: 24px;
+  background: url('../images/check-mark.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.apply_button{
+  width: 100%;
+  height: 48px;
+  background-color: #4CAF50;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo_proposal{
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  visibility: hidden;
+}
 
 @media only screen and (min-width: 768px) {}
 

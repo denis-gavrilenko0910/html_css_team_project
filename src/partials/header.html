@@ -1,4 +1,88 @@
 <!-- src/partials/header.html -->
 <header class="header" id="top">
-  <!-- TODO: content -->
+  <div class="container">
+    <nav class="nav-header">
+      <a class="logo" href="./index.html">english<span class="logo-studio">excellence</span>.</a>
+      <ul class="list-menu">
+        <li><a class="menu current" href="./index.html">About us</a></li>
+        <li><a class="menu" href="">Our lessons</a></li>
+        <li><a class="menu" href="">Teachers</a></li>
+        <li><a class="menu" href="">Reviews</a></li>
+        <li><a class="menu" href="">Contact us</a></li>
+      </ul>
+    </nav>
+    <div class="social-link-wrapper">
+      <ul class="mobile-tsl-list">
+        <li class="tsl-list-social-icon">
+          <a href="" class="tsl-item">
+            <svg width="26" height="26" class="tsl-svg">
+              <use href="./img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="tsl-list-social-icon">
+          <a href="" class="tsl-item">
+            <svg width="26" height="26" class="tsl-svg">
+              <use href="./img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="tsl-list-social-icon">
+          <a href="" class="tsl-item">
+            <svg width="26" height="26" class="tsl-svg">
+              <use href="./img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <button class="burger-btn" type="button" data-modal-open>
+      <svg class="burger-icon" width="32" height="32">
+        <use href="./img/sprite.svg#burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button class="modal-btn-close" type="button" data-modal-close>
+        <svg class="modal-icon-close" width="32" height="32">
+          <use href="./img/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-list-menu">
+          <li><a class="mobile-menu-item link" href="./index.html">About us</a></li>
+          <li><a class="mobile-menu-item link" href="">Our lessons</a></li>
+          <li><a class="mobile-menu-item link" href="">Teachers</a></li>
+          <li><a class="mobile-menu-item link" href="">Reviews</a></li>
+          <li><a class="mobile-menu-item link" href="">Contact us</a></li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="mobile-tsl-list">
+          <li class="tsl-list-social-icon">
+            <a href="" class="tsl-item">
+              <svg width="26" height="26" class="tsl-svg">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tsl-list-social-icon">
+            <a href="" class="tsl-item">
+              <svg width="26" height="26" class="tsl-svg">
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tsl-list-social-icon">
+            <a href="" class="tsl-item">
+              <svg width="26" height="26" class="tsl-svg">
+                <use href="./img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>

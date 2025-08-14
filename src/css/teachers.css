@@ -1,0 +1,144 @@
+.teachers {
+    padding: 40px 16px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.container {
+      width: 100%;
+      height: 100%;
+      margin:auto;
+    }
+
+.teachers-title {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #121417;
+    margin-bottom: 16px;
+    padding-top: 61.5px 0 0;
+}
+
+.teachers-title .underline {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.teachers-title .underline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 20px;
+
+    background-color: #BEE8CC;
+    border-radius: 8px;
+    opacity: 1;
+    z-index: -1;
+}
+
+.teachers-subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(18, 20, 23, 0.5);
+    max-width: 709px;
+    margin: 0 auto 32px;
+    text-align: center;
+    gap: 16px;
+}
+
+.teacher-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.teacher-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teacher-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teacher-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Background colors from your design */
+.bg-green {
+    background-color: #BEE8CC;
+}
+
+.bg-pink {
+    background-color: #D4B2AF;
+}
+
+.bg-yellow {
+    background-color: #DFCC9F;
+}
+
+.bg-lightgreen {
+    background-color: #D1DFC3;
+}
+
+.teacher-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+    color: #121417;
+}
+
+.teacher-desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(18, 20, 23, 0.5);
+    margin-top: 8px;
+}
+
+ @media (min-width: 375px) {
+    .teachers-title {
+        font-size: 32px;
+    }
+
+    .teachers-title .underline::after {
+        width: 140px;
+        height: 18px;
+    }
+
+    .teacher-photo {
+        width: 140px;
+        height: 140px;
+    }
+}
+/* Tablet */
+@media (min-width: 768px) {
+    .teacher-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+    .teacher-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+}

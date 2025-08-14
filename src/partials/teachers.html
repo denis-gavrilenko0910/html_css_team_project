@@ -1,4 +1,102 @@
 <!-- src/partials/teachers.html -->
-<section class="teachers" id="teachers">
-  <!-- TODO: content -->
+<section class="teachers section" id="teachers">
+  <div class="container">
+    <h2 class="teachers-title">
+      Meet our <span class="underline">teachers</span>
+    </h2>
+    <p class="teachers-subtitle">
+      Discover our team of dedicated educators, committed to guiding you on your journey
+      to English proficiency with personalized and engaging instruction.
+    </p>
+
+    <ul class="teacher-list">
+      <li class="teacher-card">
+        <div class="teacher-photo bg-pink">
+          <picture>
+            <!-- Для мобілок -->
+            <source srcset="../img/maria.avif 1x, ../img/maria@2x.avif 2x" type="image/avif" media="(max-width: 767px)">
+            <source srcset="../img/maria.jpg 1x, ../img/maria@2x.jpg 2x" media="(max-width: 767px)">
+            
+            <!-- Для планшетів і вище -->
+            <source srcset="../img/maria@2x.avif 2x" type="image/avif" media="(min-width: 768px)">
+            <source srcset="../img/maria@2x.jpg 2x" media="(min-width: 768px)">
+            
+            <!-- Фолбек для старих браузерів -->
+            <img src="../img/maria.jpg" alt="Maria, beginner-level English specialist" loading="lazy">
+          </picture>
+        </div>
+        <h3 class="teacher-name">Maria</h3>
+        <p class="teacher-desc">
+          A seasoned linguist and our primary specialist in beginner-level instruction.
+          Maria brings warmth and patience to every class.
+        </p>
+      </li>
+
+      <li class="teacher-card">
+        <div class="teacher-photo bg-orange">
+          <picture>
+            <!-- Для мобілок -->
+            <source srcset="../img/artem.avif 1x, ../img/artem@2x.avif 2x" type="image/avif" media="(max-width: 767px)">
+            <source srcset="../img/artem.jpg 1x, ../img/artem@2x.jpg 2x" media="(max-width: 767px)">
+            
+            <!-- Для планшетів і вище -->
+            <source srcset="../img/artem@2x.avif 2x" type="image/avif" media="(min-width: 768px)">
+            <source srcset="../img/artem@2x.jpg 2x" media="(min-width: 768px)">
+            
+            <!-- Фолбек для старих браузерів -->
+            <img src="../img/artem.jpg" alt="Artem, innovative teaching techniques and a focus on interactive learning" loading="lazy">
+          </picture>
+        </div>
+        <h3 class="teacher-name">Artem</h3>
+        <p class="teacher-desc">
+          With his innovative teaching techniques and a focus on interactive learning,
+          Artem excels in keeping students engaged and motivated.
+        </p>
+      </li>
+
+      <li class="teacher-card">
+        <div class="teacher-photo bg-yellow">
+          <picture>
+            <!-- Для мобілок -->
+            <source srcset="../img/ilona.avif 1x, ../img/ilona@2x.avif 2x" type="image/avif" media="(max-width: 767px)">
+            <source srcset="../img/ilona.jpg 1x, ../img/ilona@2x.jpg 2x" media="(max-width: 767px)">
+            
+            <!-- Для планшетів і вище -->
+            <source srcset="../img/ilona@2x.avif 2x" type="image/avif" media="(min-width: 768px)">
+            <source srcset="../img/ilona@2x.jpg 2x" media="(min-width: 768px)">
+            
+            <!-- Фолбек для старих браузерів -->
+            <img src="../img/ilona.jpg" alt="Ilona, a specialist in advanced English" loading="lazy">
+          </picture>
+        </div>
+        <h3 class="teacher-name">Ilona</h3>
+        <p class="teacher-desc">
+          A specialist in advanced English, Ilona provides intensive instruction,
+          ensuring students gain confidence in complex language tasks.
+        </p>
+      </li>
+
+      <li class="teacher-card">
+        <div class="teacher-photo bg-green">
+          <picture>
+            <!-- Для мобілок -->
+            <source srcset="../img/volodymyr.avif 1x, ../img/volodymyr@2x.avif 2x" type="image/avif" media="(max-width: 767px)">
+            <source srcset="../img/volodymyr.jpg 1x, ../img/volodymyr@2x.jpg 2x" media="(max-width: 767px)">
+            
+            <!-- Для планшетів і вище -->
+            <source srcset="../img/volodymyr@2x.avif 2x" type="image/avif" media="(min-width: 768px)">
+            <source srcset="../img/volodymyr@2x.jpg 2x" media="(min-width: 768px)">
+            
+            <!-- Фолбек для старих браузерів -->
+            <img src="../img/volodymyr.jpg" alt="Volodymyr, is an expert in English for specific purposes" loading="lazy">
+          </picture>
+        </div>
+        <h3 class="teacher-name">Volodymyr</h3>
+        <p class="teacher-desc">
+          Our expert in English for specific purposes, Volodymyr tailors his approach
+          to meet individual career and industry-specific language needs.
+        </p>
+      </li>
+    </ul>
+  </div>
 </section>

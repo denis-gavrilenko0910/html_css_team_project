@@ -39,8 +39,8 @@
 .hero-title-span {
   color:#BEE8CC;
 }
-.button-leave-app {
-    font-family: inherit;;
+.btn-leave-app {
+    font-family: inherit;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.71;
@@ -53,12 +53,11 @@
     white-space: nowrap; 
     border-radius: 12px;
     padding: 14px 78px;
-    border: none;   
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    border: none;    
 }
 
-.button-leave-app:hover, .button-leave-app:focus {
-    background-color: var(--buttonbackcol);
+.btn-leave-app:hover, .btn-leave-app:focus {
+    background-color:#38AE5F;
 }
 .hero-scroll-link {
   position: absolute;
@@ -74,9 +73,16 @@
 }
 
 .hero-scroll-svg {
-  /* stroke:red; */
-  fill: blue;
-  /*color:#4DC274; */
+  stroke: #4DC274;
+  fill: #4DC274;
+}
+
+.hero-scroll-link:hover, .hero-scroll-link:focus{
+    background-color:#4DC274;
+    .hero-scroll-svg {
+        stroke:#fff;
+        fill: #fff;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -116,9 +122,6 @@
 .hero-scroll-svg {
   width: 24px;
   height: 24px;
-  /* stroke:red; */
-  fill: blue;
-  /*color:#4DC274; */
 }
 
 }

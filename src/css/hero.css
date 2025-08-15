@@ -9,7 +9,6 @@
     background-size: cover;
     border-radius: 16px;
     margin: 0 auto;
-    margin-bottom: 80px;
 }
 @media (min-resolution: 192dpi) {
     .hero {
@@ -19,7 +18,8 @@
     }
 }
 
-.hero .container {
+.hero-container {
+    max-width:375px;
     position:relative;
     display: flex;
     flex-direction: column;
@@ -92,7 +92,6 @@
     background-image: linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%, 
     rgba(0, 0, 0, 0) 51.43%),
     url(../img/hero-tab.jpg);
-    margin-bottom: 100px;
     }
   .hero-title {
     font-size: 60px;
@@ -101,15 +100,7 @@
     max-width: 488px;
     margin-bottom: 32px;
   }
-  .button-order {
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0em;
-    min-width:306px;
-    height: 60px;      
-    padding: 16px 64px;
-  }
-  .hero .container {
+  .hero-container {
     padding: 260px 0px 295px 32px;
     align-items: flex-start;
     }
@@ -136,11 +127,10 @@
 }
 @media screen and (min-width: 1280px) {
    .hero {
-        max-width: 1280px;
+        max-width: 1152px;
         background-image: linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%),
         url(../img/hero-desk.jpg);
-        margin-bottom: 96px;
     }
     .hero-title {
     font-size: 60px;
@@ -151,13 +141,14 @@
     margin-bottom: 32px; 
 }
 
-  .hero .container {
+  .hero-container {
+    max-width: 1152px;
     padding: 164px 0px 163px 64px;
     }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
     .hero {
-        max-width: 1280px;
+        max-width: 1152px;
         background-image: linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%),
         url(../img/hero-desk@2x.jpg);

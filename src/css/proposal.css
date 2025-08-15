@@ -3,50 +3,116 @@
 }
 
 .package_content{
-  background: linear-gradient(to right, #4DC274, #BEE8CC);
-  border-radius: 16px;
+  position: relative;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  max-width: 335px;
+  padding-top: 40px;
+  padding-bottom: 64px;
+  border-radius: 16px;
 }
 
 .package_master{
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 65px;
   color:#FFFFFF;
   font-family: "Manrope", sans-serif;
   font-size: 38px;
+  font-weight: 700;
 }
 
-.green-text{
+.green_text{
   color: #BEE8CC;
 }
 
 .package_details{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  min-height: 400px;
-  background-color:#FFFFFF;
-  margin-bottom: 10px;
+  position: relative;
   border-radius: 16px;
+  width: 294px;
+  height: 407px;
+  z-index: 1;
+}
 
+.package_details::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  position: absolute;
+  transform-origin: center;
+  pointer-events: none;
+  background: #D4FDE1;
+  transform: rotate(9deg);
+  z-index: -1;
+}
+
+.package_details::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -0%;
+  left: -0%;
+  border-radius: 16px;
+  position: absolute;
+  transform-origin: center;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.5);
+  transform: rotate(-11deg);
+  z-index: -1;
+}
+
+.proposal_title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin-bottom: 20px;
 }
 
 .power_of_english{
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  width: 100%;
+  padding: 40px 20px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.proposal_list{
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.proposal_elem{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.check_mark_cont{
+  display: flex;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--green);
+  fill: none;
 }
 
 .check_mark{
   width: 24px;
   height: 24px;
-  background: url('../images/check-mark.svg') no-repeat center center;
   background-size: contain;
+}
+
+.li_text{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.02em;
 }
 
 .apply_button{
@@ -64,13 +130,15 @@
   justify-content: center;
 }
 
-.photo_proposal{
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  visibility: hidden;
+.apply_button:hover,
+.apply_button:focus {
+  background-color: #FFFFFF;
+  color:#4CAF50;
 }
 
+.photo_proposal{
+ display: none;
+}
 @media only screen and (min-width: 768px) {}
 
 @media only screen and (min-width: 1200px) {}

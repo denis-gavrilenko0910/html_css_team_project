@@ -2,6 +2,13 @@
   visibility: hidden;
 }
 
+.proposal{
+  display: flex;
+  max-width: 1182px;
+  text-align: left;
+  margin: 0 auto;
+}
+
 .package_content{
   position: relative;
   overflow: hidden;
@@ -24,11 +31,17 @@
   color: #BEE8CC;
 }
 
-.package_details{
+.package_details {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 400px;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
   border-radius: 16px;
-  width: 294px;
-  height: 407px;
   z-index: 1;
 }
 

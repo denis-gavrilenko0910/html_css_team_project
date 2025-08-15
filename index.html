@@ -6,18 +6,103 @@
     <link rel="icon" type="image/svg+xml" href="/html_css_team_project/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- <link rel="stylesheet" href="font" /> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css" integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    /> -->
-    <title>Vanilla App Template</title>
-  <link rel="stylesheet" crossorigin href="/html_css_team_project/assets/index-CZ8waI_Z.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>English Excellence</title>
+  <script type="module" crossorigin src="/html_css_team_project/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/html_css_team_project/assets/index-it8e1Kg2.css">
 </head>
 
 <body>
     <!-- src/partials/header.html -->
 <header class="header" id="top">
-  <!-- TODO: content -->
+  <div class="container">
+    <nav class="nav-header" aria-label="Main navigation menu">
+      <a class="logo-header" href="./index.html">english<span class="logo-studio">excellence</span>.</a>
+      <ul class="list-menu">
+        <li><a class="menu current" href="#about">About us</a></li>
+        <li><a class="menu current" href="#lessons">Our lessons</a></li>
+        <li><a class="menu current" href="#teachers">Teachers</a></li>
+        <li><a class="menu current" href="#reviews">Reviews</a></li>
+        <li><a class="menu current" href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+    <div class="social-link-wrapper">
+      <ul class="mobile-tsl-list">
+        <li class="tsl-list-social-icon">
+          <a href="https://www.facebook.com/goITclub/" class="tsl-item" target="_blank" rel="noopener">
+            <svg width="26" height="26" class="tsl-svg" aria-label="We are on Facebook">
+              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="tsl-list-social-icon">
+          <a href="https://www.instagram.com/goitclub/" class="tsl-item" target="_blank" rel="noopener">
+            <svg width="26" height="26" class="tsl-svg" aria-label="We are on Instagram">
+              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="tsl-list-social-icon">
+          <a href="https://www.youtube.com/c/GoIT" class="tsl-item" target="_blank" rel="noopener">
+            <svg width="26" height="26" class="tsl-svg" aria-label="We are on Youtube">
+              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <button class="burger-btn" type="button" data-modal-open aria-label="Opens the mobile menu">
+      <svg class="burger-icon" width="32" height="32">
+        <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button class="modal-btn-close" type="button" data-modal-close aria-label="Close the mobile menu">
+        <svg class="modal-icon-close" width="32" height="32">
+          <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#icon-x"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav" aria-label="Mobile navigation menu">
+        <ul class="mobile-list-menu">
+          <li><a class="mobile-menu-item link" href="#about">About us</a></li>
+          <li><a class="mobile-menu-item link" href="#lessons">Our lessons</a></li>
+          <li><a class="mobile-menu-item link" href="#teachers">Teachers</a></li>
+          <li><a class="mobile-menu-item link" href="#reviews">Reviews</a></li>
+          <li><a class="mobile-menu-item link" href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="mobile-tsl-list">
+          <li class="tsl-list-social-icon">
+            <a href="https://www.facebook.com/goITclub/" class="tsl-item" target="_blank" rel="noopener">
+              <svg width="26" height="26" class="tsl-svg" aria-label="We are on Facebook">
+                <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tsl-list-social-icon">
+            <a href="https://www.instagram.com/goitclub/" class="tsl-item" target="_blank" rel="noopener">
+              <svg width="26" height="26" class="tsl-svg" aria-label="We are on Instagram">
+                <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tsl-list-social-icon">
+            <a href="https://www.youtube.com/c/GoIT" class="tsl-item" target="_blank" rel="noopener">
+              <svg width="26" height="26" class="tsl-svg" aria-label="We are on Youtube">
+                <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>
 
 
@@ -25,22 +110,129 @@
         <!-- Loads the specified .html file -->
         <!-- src/partials/hero.html -->
 <section class="hero" id="hero">
-  <!-- TODO: content -->
+  <div class="container">
+    <h1 class="hero-title">Discover the joy of learning 
+      <span class="hero-title-span">English</span> with us!
+    </h1>
+    <a href="#footer" class="btn-leave-app" aria-label="Go to the contact form for communication">Leave an application</a>
+    <a href="#footer" class="hero-scroll-link" aria-label="Go to the footer section">
+      <svg width="20" height="20" class="hero-scroll-svg">
+        <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#scroll"></use>
+      </svg>
+    </a>
+  </div>
 </section>
 
         <!-- src/partials/about.html -->
 <section class="about" id="about">
-  <!-- TODO: content -->
+    <div class="container">
+        <h2 class="about-section-title">About <span class="about-section-ttl-active">Us</span></h2>
+        <p class="about-text-title">We are dedicated to providing engaging and
+            effective English language courses in a supportive
+            and stimulating learning environment</p>
+        <div class="about-content-wrapper">
+            <ul class="about-list">
+                <li class="about-item">
+                    <div class="about-icon">
+                        <h3 class="about-title">01</h3>
+                        <p class="about-text">Expert, innovative teaching staff</p>
+                    </div>
+                </li>
+                <li class="about-item">
+                    <div class="about-icon">
+                        <h3 class="about-title">02</h3>
+                        <p class="about-text">Wide range of course levels and options</p>
+                    </div>
+                </li>
+                <li class="about-item">
+                    <div class="about-icon">
+                        <h3 class="about-title">03</h3>
+                        <p class="about-text">Multicultural learning environment</p>
+                    </div>
+                </li>
+                <li class="about-item">
+                    <div class="about-icon">
+                        <h3 class="about-title">04</h3>
+                        <p class="about-text">Comprehensive language support services</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="about-card-memoji">
+                <svg width="254" height="211" class="about-svg-memoji">
+                    <use href="/html_css_team_project/assets/memoji-BKkzuTxX.svg"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
 </section>
 
         <!-- src/partials/lessons.html -->
 <section class="lessons" id="lessons">
   <!-- TODO: content -->
+  <div class="container">
+    <h2 class="section-title">Our <span class="accent-text">lessons</span></h2>
+    <p class="our-lessons-desc">
+      Our lessons are carefully structured and interactive, designed to promote
+      rapid language acquisition through practical tasks and real-world
+      scenarios
+    </p>
+    <ul class="lessons-list">
+      <li class="lessons-item">
+        <h3 class="lessons-choice">Practice</h3>
+        <p class="lessons-price">40$ / month</p>
+        <p class="lessons-desc">
+          This plan offers an opportunity for learners to engage in
+          collaborative language exercises and group activities, boosting their
+          conversational skills and confidence in using English.
+        </p>
+        <a href="#contact" class="application-btn">Leave an application</a>
+      </li>
+      <li class="lessons-item">
+        <h3 class="lessons-choice">Standard</h3>
+        <p class="lessons-price">70$ / month</p>
+        <p class="lessons-desc">
+          Our standard package provides a balanced learning approach that covers
+          all key areas of English language - reading, writing, listening, and
+          speaking. It is a set of basic knowledge and skills.
+        </p>
+        <a href="#contact" class="application-btn">Leave an application</a>
+      </li>
+      <li class="lessons-item">
+        <h3 class="lessons-choice">Individual</h3>
+        <p class="lessons-price">99$ / month</p>
+        <p class="lessons-desc">
+          We offer a tailored learning experience with individualized
+          instruction that focuses on a learner's specific language goals and
+          challenges, offering personal feedback.
+        </p>
+        <a href="#contact" class="application-btn">Leave an application</a>
+      </li>
+    </ul>
+  </div>
 </section>
 
         <!-- src/partials/proposal.html -->
 <section class="proposal" id="proposal">
-  <!-- TODO: content -->
+  <div class="package_content">
+    <h2 class="visually-hidden">Proposal to leave an application</h2>
+    <h3 class="package_master">Master the Language with Our English Package!</h3>
+    <div class="package-details">
+      <div class="power-of-english">
+        <h3>Power of English</h3>
+        <ul>
+          <li><span class="check-mark">✔</span> Dive into captivating lessons designed to stimulate your curiosity.</li>
+          <li><span class="check-mark">✔</span> Learn in a nurturing setting where every student's progress matters.</li>
+          <li><span class="check-mark">✔</span> Experience the satisfaction of real progress as your language skills and
+            confidence grow with every session.</li>
+        </ul>
+        <a href="#" class="apply-button">Leave an application</a>
+      </div>
+      <div class="image-placeholder">
+        <!-- Здесь можно разместить изображение стопки книг или заменить на <img> -->
+        <img src="books-stack.png" alt="Stack of books" />
+      </div>
+    </div>
+  </div>
 </section>
 
         <!-- src/partials/teachers.html -->
@@ -63,11 +255,102 @@
 
     <!-- src/partials/footer.html -->
 <footer class="footer" id="footer">
-  <!-- TODO: content -->
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo-wrapper">
+        <a class="logo" href="#"
+          >english<span class="logo-span">excellence</span>.</a
+        >
+      </div>
+
+      <address class="footer-address">
+        <ul class="address-list">
+          <li>
+            <!-- Доданий заголовок -->
+            <p class="address-label">Phone number:</p>
+            <a class="contact-link" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
+          <li>
+            <!-- Доданий заголовок -->
+            <p class="address-label">Address:</p>
+            <a
+              class="contact-link"
+              href="https://www.google.com/maps/place/22%D0%B0,+prosp.+Mykoly+Bazhana,+Kyiv,+02000"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >22a D. Bazhana Ave, Kyiv</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+
+    <nav class="footer-nav">
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link">About us</a></li>
+        <li><a href="#lessons" class="nav-link">Our lessons</a></li>
+        <li><a href="#teachers" class="nav-link">Teachers</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#application" class="nav-link">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-social">
+      <ul class="social-list">
+        <li>
+          <a
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="social-link"
+          >
+            <svg class="social-icon" width="28" height="28">
+              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="social-link"
+          >
+            <svg class="social-icon" width="28" height="28">
+              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="social-link"
+          >
+            <svg class="social-icon" width="28" height="28">
+              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copyright">
+      &copy; 2023 English Excellence. All rights reserved.
+    </p>
+    <div class="footer-policy">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
 </footer>
 
 
-    <!-- <script type="module" src="./main.js"></script> -->
 </body>
 
 </html>

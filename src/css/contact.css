@@ -1,0 +1,207 @@
+/* ====== Базові стилі ====== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background: #fff;
+}
+
+.apply-section {
+  padding: 40px 20px;
+}
+
+.apply-section__title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.apply-section__subtitle {
+  font-size: 16px;
+  text-align: center;
+  color: #7d7d7d;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.apply-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.apply-form input,
+.apply-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.apply-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ==== Радіо-кнопки ==== */
+.apply-form__teacher {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.apply-form__teacher-options {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.apply-form__teacher-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+}
+
+.apply-form__teacher-options input[type="radio"] {
+  margin: 0;
+  accent-color: #4DC274; /* зелений як у макеті */
+  width: 18px;
+  height: 18px;
+}
+
+.apply-form button {
+  background: #4DC274;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.apply-form button:hover {
+  background: #45b468;
+}
+
+.apply-form__privacy {
+  font-size: 12px;
+  color: #7d7d7d;
+  margin-top: 8px;
+}
+
+.apply-form__privacy a {
+  color: #7d7d7d;
+  text-decoration: underline;
+}
+
+.promo-card {
+  display: none; /* За замовчуванням приховано */
+}
+
+/* ====== Планшет (768px–1279px) ====== */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .apply-section {
+    padding: 60px 40px;
+  }
+
+  .apply-section__title {
+    font-size: 32px;
+  }
+
+  .apply-section__subtitle {
+    font-size: 18px;
+  }
+
+  .promo-card {
+    display: none;
+  }
+}
+
+/* ====== Десктоп (≥1280px) ====== */
+@media (min-width: 1280px) {
+  .apply-section {
+    padding: 80px 60px;
+  }
+
+  .apply-section__title {
+    font-size: 36px;
+  }
+
+  .apply-section__subtitle {
+    font-size: 18px;
+  }
+
+  .apply-section__content {
+    display: grid;
+    grid-template-columns: 492px 1fr;
+    gap: 32px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .promo-card {
+    display: block;
+    position: relative;
+    width: 492px;
+    height: 578px;
+    background: #4DC274;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .promo-card__media {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .promo-card__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+  }
+
+  .promo-card__stat {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 20px 24px 28px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .promo-card__number {
+    margin: 0 0 10px;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 1;
+  }
+
+  .promo-card__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: .92;
+  }
+}

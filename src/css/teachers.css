@@ -1,11 +1,11 @@
 .teachers {
-    padding: 40px 16px;
     box-sizing: border-box;
     margin: 0 auto;
     font-family: 'Manrope', sans-serif;
     text-align: center;
     width: 100%;
     height: auto;
+    padding: 40px 20px;
 }
 .container {
       width: 100%;
@@ -122,16 +122,17 @@
         height: 18px;
     }
 
-    .teacher-photo {
-        width: 140px;
-        height: 140px;
-    }
+   
 }
 /* Tablet */
 @media (min-width: 768px) {
     .teacher-list {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
+    }
+    .teachers {
+    /* відступи зверху/знизу — 50px, зліва/справа — 32px */
+        padding: 50px 32px;
     }
 }
 
@@ -140,5 +141,9 @@
     .teacher-list {
         grid-template-columns: repeat(4, 1fr);
         gap: 32px;
+    }
+    .teachers {
+    /* відступи зверху/знизу — 75px, зліва/справа — 128px */
+        padding: 75px 128px;
     }
 }

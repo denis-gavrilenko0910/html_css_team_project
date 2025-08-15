@@ -1,6 +1,5 @@
 .header {
-  padding: 18px 0;
-  margin-bottom: 8px;
+  padding: 18px 0 28px 0;
 }
 
 .header .container { 
@@ -13,8 +12,7 @@
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 20px 0;
-    margin-bottom: 32px;
+    padding: 20px 0 52px 0;
   }
   .header .container {
     max-width: 768px;
@@ -24,12 +22,11 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    padding: 20px 0;
-    margin-bottom: 16px;
+    padding: 20px 0 36px 0;
 }
   .header .container {
-    max-width: 1280px;
-    padding: 0 64px;
+    max-width: 1084px;
+    padding: 0 15px;
   }
 }
 
@@ -38,7 +35,7 @@
     align-items: center;
 }
 
-.logo {
+.logo-header {
     font-family: "Manrope", sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -86,7 +83,7 @@
   position: relative;
 }
 
-.menu.current::after {
+.menu.current:hover::after, .menu.current:focus::after{
   content: '';
   position: absolute;
   left: 0;
@@ -98,8 +95,7 @@
 }
 
 .menu:hover, 
-.menu:focus,
-.menu.current {
+.menu:focus {
     color :#121417;
 }
 
@@ -133,7 +129,7 @@
 .modal {
   position: absolute;
   top: 0px;
-  right: 230px;
+  right: 240px;
   width: 240px;
   height: 100%;
   border-radius: 4px;
@@ -258,7 +254,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .logo {
+  .logo-header {
     /* padding: 24px 0px; */
     /* margin-right: 120px; */
    }
@@ -271,7 +267,7 @@
   .social-link-wrapper {
     display: flex;
   }
-  .logo {
+  .logo-header {
     margin-right: 137px;
   }
   .list-menu {

@@ -12,7 +12,7 @@
     />
     <title>English Excellence</title>
   <script type="module" crossorigin src="/html_css_team_project/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/html_css_team_project/assets/index-Cs1yCp3y.css">
+  <link rel="stylesheet" crossorigin href="/html_css_team_project/assets/index-Khflqm95.css">
 </head>
 
 <body>
@@ -215,9 +215,7 @@
         <!-- src/partials/about.html -->
 <section id="about" class="about section">
   <div class="container">
-    <h2 class="about-section-title">
-      About <span class="about-section-ttl-active">Us</span>
-    </h2>
+    <h2 class="about-section-title">About <span class="underline">Us</span></h2>
     <p class="about-text-title">
       We are dedicated to providing engaging and effective English language
       courses <br />
@@ -258,7 +256,7 @@
 <section id="lessons" class="lessons section">
   <!-- TODO: content -->
   <div class="container">
-    <h2 class="section-title">Our <span class="accent-text">lessons</span></h2>
+    <h2 class="section-title">Our <span class="underline">lessons</span></h2>
     <p class="our-lessons-desc">
       Our lessons are carefully structured and interactive, designed to promote
       rapid language acquisition through practical tasks and real-world
@@ -309,56 +307,64 @@
     </p>
     <div class="package_details">
       <div class="power_of_english">
-        <h3 class="proposal_title">Power of English</h3>
-        <ul class="proposal_list">
-          <li class="proposal_elem">
-            <div class="check_mark_cont">
-              <svg class="check_mark" width="28" height="28">
-                <use href="/html_css_team_project/assets/sprite-D4CMMAam.svg#icon-check"></use>
-              </svg>
-            </div>
-            <p class="li_text">
-              Dive into captivating lessons designed to stimulate your
-              curiosity.
-            </p>
-          </li>
-          <li class="proposal_elem">
-            <div class="check_mark_cont">
-              <svg class="check_mark" width="28" height="28">
-                <use href="/html_css_team_project/assets/sprite-D4CMMAam.svg#icon-check"></use>
-              </svg>
-            </div>
+        <div class="power_of_english_wrapper">
+          <h3 class="proposal_title">Power of English</h3>
+          <ul class="proposal_list">
+            <li class="proposal_elem">
+              <div class="check_mark_cont">
+                <svg class="check_mark" width="28" height="28">
+                  <use href="/html_css_team_project/assets/sprite-D4CMMAam.svg#icon-check"></use>
+                </svg>
+              </div>
+              <p class="li_text">
+                Dive into captivating lessons designed to stimulate your
+                curiosity.
+              </p>
+            </li>
+            <li class="proposal_elem">
+              <div class="check_mark_cont">
+                <svg class="check_mark" width="28" height="28">
+                  <use href="/html_css_team_project/assets/sprite-D4CMMAam.svg#icon-check"></use>
+                </svg>
+              </div>
 
-            <p class="li_text">
-              Learn in a nurturing setting where every student's progress
-              matters.
-            </p>
-          </li>
-          <li class="proposal_elem">
-            <div class="check_mark_cont">
-              <svg class="check_mark" width="28" height="28">
-                <use href="/html_css_team_project/assets/sprite-D4CMMAam.svg#icon-check"></use>
-              </svg>
-            </div>
+              <p class="li_text">
+                Learn in a nurturing setting where every student's progress
+                matters.
+              </p>
+            </li>
+            <li class="proposal_elem">
+              <div class="check_mark_cont">
+                <svg class="check_mark" width="28" height="28">
+                  <use href="/html_css_team_project/assets/sprite-D4CMMAam.svg#icon-check"></use>
+                </svg>
+              </div>
 
-            <p class="li_text">
-              Experience the satisfaction of real progress as your language
-              skills and confidence grow with every session.
-            </p>
-          </li>
-        </ul>
-        <a href="#contact" class="apply_button">Leave an application</a>
-      </div>
-      <div class="image_placeholder">
-        <!-- Здесь можно разместить изображение стопки книг или заменить на <img> -->
-        <img
-          srcset="../img/tall_stack_of_books@x2.jpg 2x, ../img/tall_stack_of_books.jpg 1x"
-          src="../img/tall_stack_of_books.jpg"
-          alt="A tall stack of books"
-          width="214"
-          height="263"
-          class="photo_proposal"
-        />
+              <p class="li_text">
+                Experience the satisfaction of real progress as your language
+                skills and confidence grow with every session.
+              </p>
+            </li>
+          </ul>
+          <a href="#contact" class="apply_button">Leave an application</a>
+        </div>
+        <div class="image_placeholder">
+          <!-- Здесь можно разместить изображение стопки книг или заменить на <img> -->
+          <picture>
+            <source
+              srcset="../img/tall_stack_of_books@2x.png 2x"
+              type="image/png"
+              media="(min-width: 768px)"
+            />
+
+            <!-- Фолбек для старих браузерів -->
+            <img
+              src="../img/tall_stack_of_books.png"
+              alt="Tall stack of books"
+              loading="lazy"
+            />
+          </picture>
+        </div>
       </div>
     </div>
   </div>

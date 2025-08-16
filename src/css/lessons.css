@@ -24,37 +24,6 @@
   }
 }
 
-.accent-text {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-}
-
-.accent-text::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 26px;
-  /* відступ від верху контейнера на мобільних */
-  width: 100%;
-  height: 12px;
-  border-radius: 8px;
-  background-color: #bee8cc;
-  z-index: -1;
-  transform: translateY(-1px);
-}
-
-
-/* Tablet devices and Desktop devices */
-
-@media only screen and (min-width: 768px) {
-  .accent-text::after {
-    top: 31px;
-    height: 20px;
-    transform: translateY(-2px);
-  }
-}
-
 .our-lessons {
   color: #121417;
 }

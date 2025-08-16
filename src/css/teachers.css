@@ -1,4 +1,5 @@
 .teachers {
+    padding-top: 80px;
     box-sizing: border-box;
     margin: 0 auto;
     text-align: center;
@@ -97,6 +98,10 @@
 /* Tablet */
 
 @media (min-width: 768px) {
+    .teachers {
+        padding-top: 100px;
+    }
+
     .teacher-list {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
@@ -107,6 +112,10 @@
 /* Desktop */
 
 @media (min-width: 1280px) {
+    .teachers {
+        padding-top: 150px;
+    }
+
     .teacher-list {
         grid-template-columns: repeat(4, 1fr);
         gap: 32px;

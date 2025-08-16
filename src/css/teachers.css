@@ -88,10 +88,6 @@
     .teachers-title {
         font-size: 32px;
     }
-
-    .teachers-title .underline::after {
-        height: 18px;
-    }
 }
 
 

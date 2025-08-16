@@ -131,7 +131,7 @@
 }
 
 .apply_button {
-  width: 306px;
+  width: 255px;
   height: 48px;
   background-color: #4CAF50;
   border-radius: 8px;
@@ -194,6 +194,10 @@
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
+  }
+
+  .apply_button {
+    width: 306px;
   }
 
   .power_of_english_wrapper {

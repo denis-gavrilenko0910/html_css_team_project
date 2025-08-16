@@ -1,5 +1,4 @@
 :root {
-  --font-family: 'Manrope', sans-serif;
   --black: #121417;
   --white: #ffffff;
   --gray: #f3f5f6;
@@ -7,26 +6,20 @@
   --light-green: #bee8cc;
 }
 
+
 /* ===== REVIEWS SECTION BASE STYLES ===== */
 
 .reviews {
-  padding: 75px 0;
-  background-color: var(--white);
   text-align: center;
 }
 
-.container {
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: 1280px;
-}
 
 /* ===== TEXT STYLES ===== */
 
+
 /* Section title */
+
 .title-name {
-  font-family: var(--font-family);
-  font-weight: 700;
   font-size: 32px;
   line-height: 112%;
   letter-spacing: -0.02em;
@@ -34,35 +27,22 @@
   text-align: center;
   margin-bottom: 16px;
 }
-.accent-text {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-}
-.accent-text::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 27px;
-  width: 100%;
-  height: 12px;
-  border-radius: 8px;
-  background-color: var(--light-green);
-  z-index: -1;
-  transform: translateY(-1px);
-}
+
+
 /* Tablet devices and Desktop devices */
+
 @media only screen and (min-width: 768px) {
-  .accent-text::after {
+  .underline {
     top: 31px;
     height: 20px;
     transform: translateY(-2px);
   }
 }
 
+
 /* Subtitle */
+
 .paragraph-reviews {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   padding-bottom: 64px;
@@ -73,7 +53,9 @@
   margin: 0 auto 40px;
 }
 
+
 /* Cards list container */
+
 .list-reviews {
   display: flex;
   flex-wrap: nowrap;
@@ -86,7 +68,9 @@
   list-style: none;
 }
 
+
 /* Card element */
+
 .item-list {
   flex-shrink: 0;
   flex-basis: 90%;
@@ -96,7 +80,9 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+
 /* Top part of the card: avatar + name + role */
+
 .title-item-list {
   display: flex;
   align-items: center;
@@ -111,7 +97,9 @@
   height: auto;
 }
 
+
 /* Avatar image */
+
 .card-img {
   width: 48px;
   height: 48px;
@@ -120,17 +108,19 @@
   flex-shrink: 0;
 }
 
+
 /* Container for name and role */
+
 .card-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+
 /* Name */
+
 .title-card {
-  font-family: var(--font-family);
-  font-weight: 700;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: -0.02em;
@@ -138,9 +128,10 @@
   margin: 0;
 }
 
+
 /* Role/Status */
+
 .paragraph-card {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
   line-height: 133%;
@@ -148,9 +139,10 @@
   margin: 0;
 }
 
+
 /* Review text */
+
 .text-reviews {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
@@ -158,14 +150,13 @@
   text-align: left;
 }
 
+
 /* ===== MEDIA QUERIES ===== */
 
-/* TABLET ≥768px */
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-  }
 
+/* TABLET ≥768px */
+
+@media screen and (min-width: 768px) {
   .title-name {
     font-size: 40px;
     line-height: 120%;
@@ -186,28 +177,32 @@
   .list-reviews {
     padding: 0 32px;
   }
+
   .item-list {
     padding: 32px 16px;
     flex-basis: calc(50% - 16px);
   }
+
   .title-item-list {
     margin-bottom: 32px;
     max-width: none;
     width: 100%;
   }
 }
+
+
 /* DESKTOP ≥1280px */
+
 @media screen and (min-width: 1280px) {
+
   /* Cards grid: 3 columns */
-  .container {
-    padding: 0 116px 0 140px;
-  }
   .list-reviews {
     flex-wrap: wrap;
     overflow-x: visible;
     justify-content: center;
     padding: 0;
   }
+
   .item-list {
     flex-basis: calc(33.333% - 21.333px);
   }

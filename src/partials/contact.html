@@ -1,11 +1,13 @@
-<section class="apply-section" id="contact">
+<section class="apply section" id="contact">
   <div class="apply-section__container container">
     <!-- Header -->
     <header class="apply-section__header">
-      <h2 class="apply-section__title">Leave an application</h2>
+      <h2 class="apply-section__title">
+        Leave an <span class="underline">application</span>
+      </h2>
       <p class="apply-section__subtitle">
-        Please use the form below to contact us. Enter your name, email, and message and
-        we'll get back to you shortly.
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
       </p>
     </header>
 
@@ -15,8 +17,11 @@
         <div class="promo-card__media">
           <img
             class="promo-card__image"
-            src="/src/img/leave-application.png"
-            srcset="/src/img/leave-application.png 1x, /src/img/leave-application@2x.png 2x"
+            src="../img/leave-application.png"
+            srcset="
+              ../img/leave-application.png    1x,
+              ../img/leave-application@2x.png 2x
+            "
             alt="Student learning English online"
             width="492"
             height="392"
@@ -27,9 +32,9 @@
         <div class="promo-card__stat">
           <p class="promo-card__number">1000</p>
           <p class="promo-card__text">
-            of our online English language lessons! This journey has been
-            full of discovery, growth and unforgettable moments, and we
-            are happy to share this joyful event with you.
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
           </p>
         </div>
       </article>
@@ -39,22 +44,48 @@
         <div class="apply-form__fields inputs">
           <div class="inputs__group">
             <label class="inputs__label" for="name">Name</label>
-            <input class="inputs__control" type="text" id="name" name="name" placeholder="Name" required />
+            <input
+              class="inputs__control"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
           </div>
 
           <div class="inputs__group">
             <label class="inputs__label" for="email">Email</label>
-            <input class="inputs__control" type="email" id="email" name="email" placeholder="Email" required />
+            <input
+              class="inputs__control"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
           </div>
 
           <div class="inputs__group">
             <label class="inputs__label" for="phone">Phone</label>
-            <input class="inputs__control" type="tel" id="phone" name="phone" placeholder="Phone" />
+            <input
+              class="inputs__control"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+            />
           </div>
 
           <div class="inputs__group">
             <label class="inputs__label" for="comment">Comment</label>
-            <textarea class="inputs__control" id="comment" name="comment" placeholder="Comment" rows="4"></textarea>
+            <textarea
+              class="inputs__control"
+              id="comment"
+              name="comment"
+              placeholder="Comment"
+              rows="4"
+            ></textarea>
           </div>
         </div>
 
@@ -62,24 +93,49 @@
         <section class="apply-form__teachers">
           <h3 class="apply-form__teachers-title">Choose a teacher</h3>
 
-          <fieldset class="radio-list" role="radiogroup" aria-label="Choose a teacher">
+          <fieldset
+            class="radio-list"
+            role="radiogroup"
+            aria-label="Choose a teacher"
+          >
             <label class="radio-list__item">
-              <input class="radio-list__control" type="radio" name="teacher" value="Maria" checked />
+              <input
+                class="radio-list__control"
+                type="radio"
+                name="teacher"
+                value="Maria"
+                checked
+              />
               <span class="radio-list__text">Maria</span>
             </label>
 
             <label class="radio-list__item">
-              <input class="radio-list__control" type="radio" name="teacher" value="Artem" />
+              <input
+                class="radio-list__control"
+                type="radio"
+                name="teacher"
+                value="Artem"
+              />
               <span class="radio-list__text">Artem</span>
             </label>
 
             <label class="radio-list__item">
-              <input class="radio-list__control" type="radio" name="teacher" value="Ilona" />
+              <input
+                class="radio-list__control"
+                type="radio"
+                name="teacher"
+                value="Ilona"
+              />
               <span class="radio-list__text">Ilona</span>
             </label>
 
             <label class="radio-list__item">
-              <input class="radio-list__control" type="radio" name="teacher" value="Volodymyr" />
+              <input
+                class="radio-list__control"
+                type="radio"
+                name="teacher"
+                value="Volodymyr"
+              />
               <span class="radio-list__text">Volodymyr</span>
             </label>
           </fieldset>
@@ -90,18 +146,19 @@
           class="apply-form__submit main-button"
           type="submit"
           name="submit-application-form"
-          aria-label="Submit application form">
+          aria-label="Submit application form"
+        >
           Send
         </button>
 
         <!-- Footnote -->
         <p class="apply-form__note">
           By clicking on "Send" button, you agree to our
-          <a class="apply-form__link" href="#" target="_blank" rel="noopener">Privacy Policy</a>,
-          and allow Promodo to use this information for marketing purposes.
+          <a class="apply-form__link" href="#" target="_blank" rel="noopener"
+            >Privacy Policy</a
+          >, and allow Promodo to use this information for marketing purposes.
         </p>
       </form>
     </div>
   </div>
 </section>
-

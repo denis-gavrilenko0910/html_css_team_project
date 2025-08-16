@@ -195,7 +195,7 @@
   font-size: 18px;
   cursor: pointer;
   width: 100%;                   /* тягнеться на всю ширину форми */
-        max-width: 500px;              /* як у макеті */
+        max-width: 500px;
         height: 60px;
 }
 .apply-form__submit:hover {
@@ -221,7 +221,6 @@
   .apply-section__title { font-size: 32px; }
   .apply-section__subtitle { font-size: 18px; }
 
-  /* Центруємо контент без margin: використовуємо align-items */
   .apply-section__content {
     display: flex;
     flex-direction: column;
@@ -232,14 +231,13 @@
   /* Контейнер форми по центру і з обмеженням ширини */
   .apply-form {
     width: 100%;
-    max-width: 500px;      /* як у макеті */
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: stretch;  /* елементи розтягуються на всю ширину */
     gap: 16px;
   }
 
-  /* Внутрішні секції форми теж тягнуться на 100% */
   .apply-form__fields,
   .apply-form__teachers,
   .apply-form__submit,

@@ -1,30 +1,41 @@
 <!-- src/partials/about.html -->
-<section class="about" id="about">
-    <div class="container">
-        <h2 class="about-section-title">About <span class="about-section-ttl-active">Us</span></h2>
-        <p class="about-text-title">We are dedicated to providing engaging and
-            effective English language courses in a supportive
-            and stimulating learning environment</p>
-        <div class="about-content-wrapper">
-            <ol class="about-list">
-                <li class="about-item">
-                    <p class="about-text">Expert, innovative teaching staff</p>
-                </li>
-                <li class="about-item">
-                    <p class="about-text">Wide range of course levels and options</p>
-                </li>
-                <li class="about-item">
-                    <p class="about-text">Multicultural learning environment</p>
-                </li>
-                <li class="about-item">
-                    <p class="about-text">Comprehensive language support services</p>
-                </li>
-            </ol>
-            <div class="about-card-memoji">
-                <svg width="254" height="211" class="about-svg-memoji">
-                    <use href="./img/memoji.svg"></use>
-                </svg>
-            </div>
-        </div>
+<section id="about" class="about section">
+  <div class="container">
+    <h2 class="about-section-title">
+      About <span class="about-section-ttl-active">Us</span>
+    </h2>
+    <p class="about-text-title">
+      We are dedicated to providing engaging and effective English language
+      courses <br />
+      in a supportive and stimulating learning environment
+    </p>
+    <div class="about-content-wrapper">
+      <ol class="about-list">
+        <li class="about-item">
+          <p class="about-text">Expert, innovative teaching staff</p>
+        </li>
+        <li class="about-item">
+          <p class="about-text">Wide range of course levels and options</p>
+        </li>
+        <li class="about-item">
+          <p class="about-text">Multicultural learning environment</p>
+        </li>
+        <li class="about-item">
+          <p class="about-text">Comprehensive language support services</p>
+        </li>
+      </ol>
+      <div class="about-card-memoji">
+        <picture>
+          <source srcset="../img/memoji@2x.png 2x" type="image/png" />
+          <source srcset="../img/memoji@2x.png 2x" media="(min-width: 768px)" />
+
+          <img
+            src="../img/memoji.png"
+            alt="memoji of a teacher"
+            loading="lazy"
+          />
+        </picture>
+      </div>
     </div>
+  </div>
 </section>

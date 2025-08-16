@@ -1,42 +1,8 @@
-.section {
-  padding: 80px 0;
-}
-/* Tablet devices */
-@media only screen and (min-width: 768px) {
-  .section {
-    padding: 100px 0;
-  }
-}
-/* Desktop devices */
-@media only screen and (min-width: 1280px) {
-  .section {
-    padding: 150px 0;
-  }
-}
-
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-/* Tablet devices */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-/* Desktop devices */
-@media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1084px;
-    padding: 0 128px;
-  }
+.lessons {
+  padding-bottom: 80px;
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 32px;
   line-height: 1.13;
   letter-spacing: -0.02em;
@@ -44,8 +10,14 @@
   margin-bottom: 16px;
 }
 
+
 /* Tablet devices and Desktop devices */
+
 @media only screen and (min-width: 768px) {
+  .lessons {
+    padding-bottom: 100px;
+  }
+
   .section-title {
     font-size: 40px;
     line-height: 1.2;
@@ -62,7 +34,8 @@
   content: '';
   position: absolute;
   left: 0;
-  top: 26px; /* відступ від верху контейнера на мобільних */
+  top: 26px;
+  /* відступ від верху контейнера на мобільних */
   width: 100%;
   height: 12px;
   border-radius: 8px;
@@ -71,7 +44,9 @@
   transform: translateY(-1px);
 }
 
+
 /* Tablet devices and Desktop devices */
+
 @media only screen and (min-width: 768px) {
   .accent-text::after {
     top: 31px;
@@ -88,7 +63,7 @@
   background-color: #4dc274;
 }
 
-.lessons-item:nth-child(2n + 1) {
+.lessons-item:nth-child(2n+1) {
   background-color: #fff;
   border: 1px solid #4dc274;
 }
@@ -101,7 +76,8 @@
 .lessons-item:nth-child(2n) .lessons-desc {
   color: rgba(255, 255, 255, 0.7);
 }
-.lessons-item:nth-child(2n + 1) .lessons-desc {
+
+.lessons-item:nth-child(2n+1) .lessons-desc {
   color: rgba(18, 20, 23, 0.5);
 }
 
@@ -110,7 +86,7 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.lessons-item:nth-child(2n + 1) .application-btn {
+.lessons-item:nth-child(2n+1) .application-btn {
   background-color: #4dc274;
 }
 
@@ -121,9 +97,9 @@
   color: #4dc274;
 }
 
-.lessons-item:nth-child(2n + 1) .application-btn:hover,
-.lessons-item:nth-child(2n + 1) .application-btn:focus,
-.lessons-item:nth-child(2n + 1) .application-btn:active {
+.lessons-item:nth-child(2n+1) .application-btn:hover,
+.lessons-item:nth-child(2n+1) .application-btn:focus,
+.lessons-item:nth-child(2n+1) .application-btn:active {
   background-color: #38ae5f;
 }
 
@@ -136,7 +112,9 @@
   color: rgba(18, 20, 23, 0.5);
 }
 
+
 /* Tablet devices */
+
 @media only screen and (min-width: 768px) {
   .our-lessons-desc {
     font-size: 18px;
@@ -152,10 +130,14 @@
 .lessons-list {
   display: flex;
   flex-direction: column;
+  /* padding: 40px 20px; */
   justify-content: center;
   gap: 20px;
 }
+
+
 /* Tablet devices */
+
 @media only screen and (min-width: 768px) {
   .lessons-list {
     flex-direction: row;
@@ -167,8 +149,15 @@
     margin: 0 auto;
   }
 }
+
+
 /* Desktop devices */
+
 @media only screen and (min-width: 1280px) {
+  .lessons {
+    padding-bottom: 150px;
+  }
+
   .lessons-list {
     max-width: 1024px;
   }
@@ -187,9 +176,12 @@
   width: 100%;
   max-width: 335px;
   min-height: 400px;
-  padding: 0 20px;
+  padding: 40px 20px;
 }
+
+
 /* Tablet devices */
+
 @media only screen and (min-width: 768px) {
   .lessons-item {
     border-radius: 30px;
@@ -198,7 +190,10 @@
     padding: 0 16px;
   }
 }
+
+
 /* Desktop devices */
+
 @media only screen and (min-width: 1280px) {
   .lessons-item {
     max-width: 320px;
@@ -208,14 +203,15 @@
 }
 
 .lessons-choice {
-  font-weight: 700;
+  margin-bottom: 16px;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  margin: 40px 0 16px;
 }
 
+
 /* Tablet devices and Desktop devices */
+
 @media only screen and (min-width: 768px) {
   .lessons-choice {
     margin: 32px 0 16px;
@@ -223,21 +219,25 @@
 }
 
 .lessons-price {
-  font-weight: 700;
   font-size: 32px;
   line-height: 1.13;
   letter-spacing: -0.02em;
   margin-bottom: 40px;
 }
 
+
 /* Tablet devices */
+
 @media only screen and (min-width: 768px) {
   .lessons-price {
     line-height: 1.38;
     margin-bottom: 32px;
   }
 }
+
+
 /* Desktop devices */
+
 @media only screen and (min-width: 1280px) {
   .lessons-price {
     margin-bottom: 16px;
@@ -252,7 +252,9 @@
   margin-bottom: 20px;
 }
 
+
 /* Tablet devices and Desktop devices */
+
 @media only screen and (min-width: 768px) {
   .lessons-desc {
     font-size: 16px;
@@ -267,14 +269,14 @@
   justify-content: center;
   flex-direction: row;
   border-radius: 12px;
-  padding: 14px 78px;
-  width: 100%;
-  max-height: 52px;
+  min-width: 295px;
+  height: 52px;
   color: #fff;
-  margin-bottom: 40px;
 }
 
+
 /* Tablet devices */
+
 @media only screen and (min-width: 768px) {
   .application-btn {
     padding: 16px 63px;
@@ -282,7 +284,10 @@
     margin-bottom: 32px;
   }
 }
+
+
 /* Desktop devices */
+
 @media only screen and (min-width: 1280px) {
   .application-btn {
     padding: 16px 39px;

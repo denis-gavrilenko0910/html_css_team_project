@@ -1,19 +1,12 @@
-/* ====== Базові стилі ====== */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #000;
-  background: #fff;
-}
-
 .apply-section {
   padding: 40px 20px;
 }
 
 .apply-section__title {
-  font-size: 28px;
-  font-weight: 700;
+  position: relative;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -54,7 +47,9 @@ body {
   min-height: 100px;
 }
 
+
 /* ==== Радіо-кнопки ==== */
+
 .apply-form__teacher {
   font-weight: 600;
   margin-top: 8px;
@@ -80,7 +75,8 @@ body {
 
 .apply-form__teacher-options input[type="radio"] {
   margin: 0;
-  accent-color: #4DC274; /* зелений як у макеті */
+  accent-color: #4DC274;
+  /* зелений як у макеті */
   width: 18px;
   height: 18px;
 }
@@ -111,10 +107,13 @@ body {
 }
 
 .promo-card {
-  display: none; /* За замовчуванням приховано */
+  display: none;
+  /* За замовчуванням приховано */
 }
 
+
 /* ====== Планшет (768px–1279px) ====== */
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .apply-section {
     padding: 60px 40px;
@@ -133,7 +132,9 @@ body {
   }
 }
 
+
 /* ====== Десктоп (≥1280px) ====== */
+
 @media (min-width: 1280px) {
   .apply-section {
     padding: 80px 60px;
@@ -152,7 +153,6 @@ body {
     grid-template-columns: 492px 1fr;
     gap: 32px;
     align-items: start;
-    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -192,16 +192,17 @@ body {
   }
 
   .promo-card__number {
-    margin: 0 0 10px;
+    margin-bottom: 8px;
     font-weight: 800;
     font-size: 44px;
     line-height: 1;
   }
 
   .promo-card__text {
-    margin: 0;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.6;
-    opacity: .92;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
   }
 }

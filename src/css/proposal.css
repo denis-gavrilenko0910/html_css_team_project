@@ -45,7 +45,7 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  min-height: 400px;
+  /* min-height: 400px; */
   background-color: #FFFFFF;
   margin-bottom: 10px;
   border-radius: 16px;
@@ -93,7 +93,6 @@
   padding: 40px 20px;
   border-radius: 16px;
   background-color: #FFFFFF;
-  margin-bottom: 20px;
 }
 
 .proposal_list {
@@ -120,8 +119,8 @@
 }
 
 .check_mark {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   fill: #FFFFFF;
 }
 
@@ -132,7 +131,7 @@
 }
 
 .apply_button {
-  width: 100%;
+  width: 306px;
   height: 48px;
   background-color: #4CAF50;
   border-radius: 8px;
@@ -151,13 +150,39 @@
   color: #4CAF50;
 }
 
-.photo_proposal {
+.image_placeholder {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
+  .proposal {
+    max-width: 704px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+
   .proposal_title {
+    margin-bottom: 32px;
     font-size: 40px;
+  }
+
+  .proposal_list {
+    margin-bottom: 32px;
+  }
+
+  .proposal_elem {
+    margin-bottom: 16px;
+  }
+
+  .power_of_english {
+    padding: 60px 40px;
+    display: flex;
+  }
+
+  .li_text {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
   }
 
   .check_mark_cont {
@@ -166,29 +191,57 @@
   }
 
   .check_mark {
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
     fill: #FFFFFF;
+  }
+
+  .power_of_english_wrapper {
+    min-width: 450px;
+    margin-right: 20px;
+  }
+
+  .image_placeholder {
+    margin-top: auto;
+    display: block;
+    width: 214px;
+    height: auto;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .proposal {
+    max-width: 1182px;
     margin: 0 auto;
     padding: 75px 0;
   }
 
   .package_content {
     max-width: 1152px;
+    padding: 0 64px;
+  }
+
+  .power_of_english_wrapper {
+    min-width: 600px;
+    margin-right: 90px;
   }
 
   .package_master {
     font-size: 48px;
-    margin-bottom: 80px;
+    margin-bottom: 132px;
   }
 
-  .package_details {
-    min-height: 500px;
+  .proposal_title {
+    margin-bottom: 39px;
+  }
+
+  .power_of_english {
+    padding: 64px;
+    ;
+  }
+
+  .proposal_elem {
+    margin-bottom: 18px;
   }
 
   .photo_proposal {
@@ -196,5 +249,21 @@
     width: 100%;
     height: auto;
     border-radius: 16px;
+  }
+
+  .proposal_list {
+    margin-bottom: 40px;
+  }
+
+  .check_mark_cont {
+    width: 28px;
+    height: 28px;
+    fill: #FFFFFF;
+  }
+
+  .check_mark {
+    width: 16px;
+    height: 16px;
+    fill: #FFFFFF;
   }
 }

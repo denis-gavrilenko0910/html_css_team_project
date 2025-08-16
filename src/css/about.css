@@ -1,27 +1,11 @@
 .about-section-title {
-  font-weight: 700;
   font-size: 32px;
   line-height: 1.13;
   letter-spacing: -0.02em;
   color: #121417;
   margin-bottom: 16px;
   text-align: center;
-}
-
-.about-section-ttl-active {
-  position: relative;
-}
-
-.about-section-ttl-active::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  left: 3px;
-  bottom: 5px;
-  width: 100%;
-  height: 15px;
-  border-radius: 8px;
-  background-color: #BEE8CC;
+  align-items: baseline;
 }
 
 .about-text-title {

@@ -13,11 +13,13 @@
 }
 
 .hero-container {
-  margin: 0 auto;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 335px;
+  padding: 0 20px;
+  padding-bottom: 30px;
 }
 
 .hero-title {
@@ -104,6 +106,8 @@
   }
 
   .hero-container {
+    margin: auto;
+    padding: 0px 32px;
     max-width: 704px;
   }
 
@@ -153,7 +157,6 @@ screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
   .hero-container {
     max-width: 1054px;
-    margin: auto;
   }
 
   .hero-title {

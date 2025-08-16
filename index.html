@@ -5,97 +5,175 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/html_css_team_project/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link rel="stylesheet" href="font" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <title>English Excellence</title>
   <script type="module" crossorigin src="/html_css_team_project/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/html_css_team_project/assets/index-it8e1Kg2.css">
+  <link rel="stylesheet" crossorigin href="/html_css_team_project/assets/index-Bl0vZFhZ.css">
 </head>
 
 <body>
     <!-- src/partials/header.html -->
 <header class="header" id="top">
-  <div class="container">
+  <div class="container header-container">
     <nav class="nav-header" aria-label="Main navigation menu">
-      <a class="logo-header" href="./index.html">english<span class="logo-studio">excellence</span>.</a>
+      <a class="logo-header" href="./index.html"
+        >english<span class="logo-studio">excellence</span>.</a
+      >
       <ul class="list-menu">
-        <li><a class="menu current" href="#about">About us</a></li>
-        <li><a class="menu current" href="#lessons">Our lessons</a></li>
-        <li><a class="menu current" href="#teachers">Teachers</a></li>
-        <li><a class="menu current" href="#reviews">Reviews</a></li>
-        <li><a class="menu current" href="#contact">Contact us</a></li>
+        <li><a class="menu current link" href="#about">About us</a></li>
+        <li><a class="menu current link" href="#lessons">Our lessons</a></li>
+        <li><a class="menu current link" href="#teachers">Teachers</a></li>
+        <li><a class="menu current link" href="#reviews">Reviews</a></li>
+        <li><a class="menu current link" href="#contact">Contact us</a></li>
       </ul>
     </nav>
-    <div class="social-link-wrapper">
-      <ul class="mobile-tsl-list">
-        <li class="tsl-list-social-icon">
-          <a href="https://www.facebook.com/goITclub/" class="tsl-item" target="_blank" rel="noopener">
-            <svg width="26" height="26" class="tsl-svg" aria-label="We are on Facebook">
-              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="tsl-list-social-icon">
-          <a href="https://www.instagram.com/goitclub/" class="tsl-item" target="_blank" rel="noopener">
-            <svg width="26" height="26" class="tsl-svg" aria-label="We are on Instagram">
-              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="tsl-list-social-icon">
-          <a href="https://www.youtube.com/c/GoIT" class="tsl-item" target="_blank" rel="noopener">
-            <svg width="26" height="26" class="tsl-svg" aria-label="We are on Youtube">
-              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <button class="burger-btn" type="button" data-modal-open aria-label="Opens the mobile menu">
+
+    <ul class="mobile-tsl-list social-link-wrapper">
+      <li class="tsl-list-social-icon">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          class="tsl-item"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="26"
+            height="26"
+            class="tsl-svg"
+            aria-label="We are on Facebook"
+          >
+            <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="tsl-list-social-icon">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          class="tsl-item"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="26"
+            height="26"
+            class="tsl-svg"
+            aria-label="We are on Instagram"
+          >
+            <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="tsl-list-social-icon">
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          class="tsl-item"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="26"
+            height="26"
+            class="tsl-svg"
+            aria-label="We are on Youtube"
+          >
+            <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button
+      class="burger-btn"
+      type="button"
+      data-modal-open
+      aria-label="Opens the mobile menu"
+    >
       <svg class="burger-icon" width="32" height="32">
-        <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#burger"></use>
+        <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#burger"></use>
       </svg>
     </button>
   </div>
   <div class="backdrop" data-modal>
     <div class="modal">
-      <button class="modal-btn-close" type="button" data-modal-close aria-label="Close the mobile menu">
+      <button
+        class="modal-btn-close"
+        type="button"
+        data-modal-close
+        aria-label="Close the mobile menu"
+      >
         <svg class="modal-icon-close" width="32" height="32">
-          <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#icon-x"></use>
+          <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#icon-x"></use>
         </svg>
       </button>
       <nav class="mobile-menu-nav" aria-label="Mobile navigation menu">
         <ul class="mobile-list-menu">
           <li><a class="mobile-menu-item link" href="#about">About us</a></li>
-          <li><a class="mobile-menu-item link" href="#lessons">Our lessons</a></li>
-          <li><a class="mobile-menu-item link" href="#teachers">Teachers</a></li>
+          <li>
+            <a class="mobile-menu-item link" href="#lessons">Our lessons</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item link" href="#teachers">Teachers</a>
+          </li>
           <li><a class="mobile-menu-item link" href="#reviews">Reviews</a></li>
-          <li><a class="mobile-menu-item link" href="#contact">Contact us</a></li>
+          <li>
+            <a class="mobile-menu-item link" href="#contact">Contact us</a>
+          </li>
         </ul>
       </nav>
       <div>
         <ul class="mobile-tsl-list">
           <li class="tsl-list-social-icon">
-            <a href="https://www.facebook.com/goITclub/" class="tsl-item" target="_blank" rel="noopener">
-              <svg width="26" height="26" class="tsl-svg" aria-label="We are on Facebook">
-                <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#facebook"></use>
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="tsl-item"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="26"
+                height="26"
+                class="tsl-svg"
+                aria-label="We are on Facebook"
+              >
+                <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="tsl-list-social-icon">
-            <a href="https://www.instagram.com/goitclub/" class="tsl-item" target="_blank" rel="noopener">
-              <svg width="26" height="26" class="tsl-svg" aria-label="We are on Instagram">
-                <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#instagram"></use>
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="tsl-item"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="26"
+                height="26"
+                class="tsl-svg"
+                aria-label="We are on Instagram"
+              >
+                <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="tsl-list-social-icon">
-            <a href="https://www.youtube.com/c/GoIT" class="tsl-item" target="_blank" rel="noopener">
-              <svg width="26" height="26" class="tsl-svg" aria-label="We are on Youtube">
-                <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#youtube"></use>
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="tsl-item"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="26"
+                height="26"
+                class="tsl-svg"
+                aria-label="We are on Youtube"
+              >
+                <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -109,65 +187,75 @@
     <main>
         <!-- Loads the specified .html file -->
         <!-- src/partials/hero.html -->
-<section class="hero" id="hero">
-  <div class="container">
-    <h1 class="hero-title">Discover the joy of learning 
-      <span class="hero-title-span">English</span> with us!
+<section class="hero section" id="hero">
+  <div class="hero-container">
+    <h1 class="hero-title">
+      Discover the joy of<br />
+      learning <span class="hero-title-span">English</span><br />
+      with us!
     </h1>
-    <a href="#footer" class="btn-leave-app" aria-label="Go to the contact form for communication">Leave an application</a>
-    <a href="#footer" class="hero-scroll-link" aria-label="Go to the footer section">
+    <a
+      href="#footer"
+      class="btn-leave-app"
+      aria-label="Go to the contact form for communication"
+      >Leave an application</a
+    >
+    <a
+      href="#footer"
+      class="hero-scroll-link"
+      aria-label="Go to the footer section"
+    >
       <svg width="20" height="20" class="hero-scroll-svg">
-        <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#scroll"></use>
+        <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#scroll"></use>
       </svg>
     </a>
   </div>
 </section>
 
         <!-- src/partials/about.html -->
-<section class="about" id="about">
-    <div class="container">
-        <h2 class="about-section-title">About <span class="about-section-ttl-active">Us</span></h2>
-        <p class="about-text-title">We are dedicated to providing engaging and
-            effective English language courses in a supportive
-            and stimulating learning environment</p>
-        <div class="about-content-wrapper">
-            <ul class="about-list">
-                <li class="about-item">
-                    <div class="about-icon">
-                        <h3 class="about-title">01</h3>
-                        <p class="about-text">Expert, innovative teaching staff</p>
-                    </div>
-                </li>
-                <li class="about-item">
-                    <div class="about-icon">
-                        <h3 class="about-title">02</h3>
-                        <p class="about-text">Wide range of course levels and options</p>
-                    </div>
-                </li>
-                <li class="about-item">
-                    <div class="about-icon">
-                        <h3 class="about-title">03</h3>
-                        <p class="about-text">Multicultural learning environment</p>
-                    </div>
-                </li>
-                <li class="about-item">
-                    <div class="about-icon">
-                        <h3 class="about-title">04</h3>
-                        <p class="about-text">Comprehensive language support services</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="about-card-memoji">
-                <svg width="254" height="211" class="about-svg-memoji">
-                    <use href="/html_css_team_project/assets/memoji-BKkzuTxX.svg"></use>
-                </svg>
-            </div>
-        </div>
+<section id="about" class="about section">
+  <div class="container">
+    <h2 class="about-section-title">
+      About <span class="about-section-ttl-active">Us</span>
+    </h2>
+    <p class="about-text-title">
+      We are dedicated to providing engaging and effective English language
+      courses <br />
+      in a supportive and stimulating learning environment
+    </p>
+    <div class="about-content-wrapper">
+      <ol class="about-list">
+        <li class="about-item">
+          <p class="about-text">Expert, innovative teaching staff</p>
+        </li>
+        <li class="about-item">
+          <p class="about-text">Wide range of course levels and options</p>
+        </li>
+        <li class="about-item">
+          <p class="about-text">Multicultural learning environment</p>
+        </li>
+        <li class="about-item">
+          <p class="about-text">Comprehensive language support services</p>
+        </li>
+      </ol>
+      <div class="about-card-memoji">
+        <picture>
+          <source srcset="../img/memoji@2x.png 2x" type="image/png" />
+          <source srcset="../img/memoji@2x.png 2x" media="(min-width: 768px)" />
+
+          <img
+            src="../img/memoji.png"
+            alt="memoji of a teacher"
+            loading="lazy"
+          />
+        </picture>
+      </div>
     </div>
+  </div>
 </section>
 
         <!-- src/partials/lessons.html -->
-<section class="lessons" id="lessons">
+<section id="lessons" class="lessons section">
   <!-- TODO: content -->
   <div class="container">
     <h2 class="section-title">Our <span class="accent-text">lessons</span></h2>
@@ -212,42 +300,521 @@
 </section>
 
         <!-- src/partials/proposal.html -->
-<section class="proposal" id="proposal">
-  <div class="package_content">
-    <h2 class="visually-hidden">Proposal to leave an application</h2>
-    <h3 class="package_master">Master the Language with Our English Package!</h3>
-    <div class="package-details">
-      <div class="power-of-english">
-        <h3>Power of English</h3>
-        <ul>
-          <li><span class="check-mark">✔</span> Dive into captivating lessons designed to stimulate your curiosity.</li>
-          <li><span class="check-mark">✔</span> Learn in a nurturing setting where every student's progress matters.</li>
-          <li><span class="check-mark">✔</span> Experience the satisfaction of real progress as your language skills and
-            confidence grow with every session.</li>
+<section id="proposal" class="section proposal">
+  <div class="container package_content">
+    <h2 class="visually_hidden">Proposal to leave an application</h2>
+    <p class="package_master">
+      Master the <span class="green_text">Language</span> with Our English
+      Package!
+    </p>
+    <div class="package_details">
+      <div class="power_of_english">
+        <h3 class="proposal_title">Power of English</h3>
+        <ul class="proposal_list">
+          <li class="proposal_elem">
+            <div class="check_mark_cont">
+              <svg class="check_mark" width="28" height="28">
+                <use href="../img/sprite.svg#icon-check"></use>
+              </svg>
+            </div>
+            <p class="li_text">
+              Dive into captivating lessons designed to stimulate your
+              curiosity.
+            </p>
+          </li>
+          <li class="proposal_elem">
+            <div class="check_mark_cont">
+              <svg class="check_mark" width="28" height="28">
+                <use href="../img/sprite.svg#icon-check"></use>
+              </svg>
+            </div>
+            <p class="li_text">
+              Learn in a nurturing setting where every student's progress
+              matters.
+            </p>
+          </li>
+          <li class="proposal_elem">
+            <div class="check_mark_cont">
+              <svg class="check_mark" width="28" height="28">
+                <use href="../img/sprite.svg#icon-check"></use>
+              </svg>
+            </div>
+            <p class="li_text">
+              Experience the satisfaction of real progress as your language
+              skills and confidence grow with every session.
+            </p>
+          </li>
         </ul>
-        <a href="#" class="apply-button">Leave an application</a>
+        <a href="#contact" class="apply_button">Leave an application</a>
       </div>
-      <div class="image-placeholder">
+      <div class="image_placeholder">
         <!-- Здесь можно разместить изображение стопки книг или заменить на <img> -->
-        <img src="books-stack.png" alt="Stack of books" />
+        <img
+          srcset="../img/tall_stack_of_books@x2.jpg 2x, ../img/tall_stack_of_books.jpg 1x"
+          src="../img/tall_stack_of_books.jpg"
+          alt="A tall stack of books"
+          width="214"
+          height="263"
+          class="photo_proposal"
+        />
       </div>
     </div>
   </div>
 </section>
 
         <!-- src/partials/teachers.html -->
-<section class="teachers" id="teachers">
-  <!-- TODO: content -->
+<section class="teachers section" id="teachers">
+  <div class="container">
+    <h2 class="teachers-title">
+      Meet our <span class="underline">teachers</span>
+    </h2>
+    <p class="teachers-subtitle">
+      Discover our team of dedicated educators, committed to guiding you on your
+      journey to English proficiency with personalized and engaging instruction.
+    </p>
+
+    <ul class="teacher-list">
+      <li class="teacher-card">
+        <div class="teacher-photo bg-pink">
+          <picture>
+            <!-- Для мобілок -->
+            <source
+              srcset="../img/maria.avif 1x, ../img/maria@2x.avif 2x"
+              type="image/avif"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="../img/maria.jpg 1x, ../img/maria@2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+
+            <!-- Для планшетів і вище -->
+            <source
+              srcset="../img/maria@2x.avif 2x"
+              type="image/avif"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="../img/maria@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+
+            <!-- Фолбек для старих браузерів -->
+            <img
+              src="../img/maria.jpg"
+              alt="Maria, beginner-level English specialist"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <h3 class="teacher-name">Maria</h3>
+        <p class="teacher-desc">
+          A seasoned linguist and our primary specialist in beginner-level
+          instruction. Maria brings warmth and patience to every class.
+        </p>
+      </li>
+
+      <li class="teacher-card">
+        <div class="teacher-photo bg-orange">
+          <picture>
+            <!-- Для мобілок -->
+            <source
+              srcset="../img/artem.avif 1x, ../img/artem@2x.avif 2x"
+              type="image/avif"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="../img/artem.jpg 1x, ../img/artem@2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+
+            <!-- Для планшетів і вище -->
+            <source
+              srcset="../img/artem@2x.avif 2x"
+              type="image/avif"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="../img/artem@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+
+            <!-- Фолбек для старих браузерів -->
+            <img
+              src="../img/artem.jpg"
+              alt="Artem, innovative teaching techniques and a focus on interactive learning"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <h3 class="teacher-name">Artem</h3>
+        <p class="teacher-desc">
+          With his innovative teaching techniques and a focus on interactive
+          learning, Artem excels in keeping students engaged and motivated.
+        </p>
+      </li>
+
+      <li class="teacher-card">
+        <div class="teacher-photo bg-yellow">
+          <picture>
+            <!-- Для мобілок -->
+            <source
+              srcset="../img/ilona.avif 1x, ../img/ilona@2x.avif 2x"
+              type="image/avif"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="../img/ilona.jpg 1x, ../img/ilona@2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+
+            <!-- Для планшетів і вище -->
+            <source
+              srcset="../img/ilona@2x.avif 2x"
+              type="image/avif"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="../img/ilona@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+
+            <!-- Фолбек для старих браузерів -->
+            <img
+              src="../img/ilona.jpg"
+              alt="Ilona, a specialist in advanced English"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <h3 class="teacher-name">Ilona</h3>
+        <p class="teacher-desc">
+          A specialist in advanced English, Ilona provides intensive
+          instruction, ensuring students gain confidence in complex language
+          tasks.
+        </p>
+      </li>
+
+      <li class="teacher-card">
+        <div class="teacher-photo bg-green">
+          <picture>
+            <!-- Для мобілок -->
+            <source
+              srcset="../img/volodymyr.avif 1x, ../img/volodymyr@2x.avif 2x"
+              type="image/avif"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="../img/volodymyr.jpg 1x, ../img/volodymyr@2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+
+            <!-- Для планшетів і вище -->
+            <source
+              srcset="../img/volodymyr@2x.avif 2x"
+              type="image/avif"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="../img/volodymyr@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+
+            <!-- Фолбек для старих браузерів -->
+            <img
+              src="../img/volodymyr.jpg"
+              alt="Volodymyr, is an expert in English for specific purposes"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <h3 class="teacher-name">Volodymyr</h3>
+        <p class="teacher-desc">
+          Our expert in English for specific purposes, Volodymyr tailors his
+          approach to meet individual career and industry-specific language
+          needs.
+        </p>
+      </li>
+    </ul>
+  </div>
 </section>
 
-        <!-- src/partials/contact.html -->
-<section class="contact" id="contact">
-  <!-- TODO: content -->
+        <section class="apply section" id="contact">
+  <div class="apply-section__container container">
+    <!-- Header -->
+    <header class="apply-section__header">
+      <h2 class="apply-section__title">
+        Leave an <span class="underline">application</span>
+      </h2>
+      <p class="apply-section__subtitle">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+    </header>
+
+    <div class="apply-section__content">
+      <!-- Left: Promo card with image and stats -->
+      <article class="promo-card">
+        <div class="promo-card__media">
+          <img
+            class="promo-card__image"
+            src="../img/leave-application.png"
+            srcset="../img/leave-application.png 1x, ../img/leave-application@2x.png 2x"
+            alt="Student learning English online"
+            width="492"
+            height="392"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="promo-card__stat">
+          <p class="promo-card__number">1000</p>
+          <p class="promo-card__text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </article>
+
+      <!-- Right: Form -->
+      <form class="apply-form" action="#" method="post" novalidate>
+        <div class="apply-form__fields inputs">
+          <div class="inputs__group">
+            <label class="inputs__label" for="name">Name</label>
+            <input
+              class="inputs__control"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="inputs__group">
+            <label class="inputs__label" for="email">Email</label>
+            <input
+              class="inputs__control"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="inputs__group">
+            <label class="inputs__label" for="phone">Phone</label>
+            <input
+              class="inputs__control"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+            />
+          </div>
+
+          <div class="inputs__group">
+            <label class="inputs__label" for="comment">Comment</label>
+            <textarea
+              class="inputs__control"
+              id="comment"
+              name="comment"
+              placeholder="Comment"
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Choose a teacher -->
+        <section class="apply-form__teachers">
+          <h3 class="apply-form__teachers-title">Choose a teacher</h3>
+
+          <fieldset
+            class="radio-list"
+            role="radiogroup"
+            aria-label="Choose a teacher"
+          >
+            <label class="radio-list__item">
+              <input
+                class="radio-list__control"
+                type="radio"
+                name="teacher"
+                value="Maria"
+                checked
+              />
+              <span class="radio-list__text">Maria</span>
+            </label>
+
+            <label class="radio-list__item">
+              <input
+                class="radio-list__control"
+                type="radio"
+                name="teacher"
+                value="Artem"
+              />
+              <span class="radio-list__text">Artem</span>
+            </label>
+
+            <label class="radio-list__item">
+              <input
+                class="radio-list__control"
+                type="radio"
+                name="teacher"
+                value="Ilona"
+              />
+              <span class="radio-list__text">Ilona</span>
+            </label>
+
+            <label class="radio-list__item">
+              <input
+                class="radio-list__control"
+                type="radio"
+                name="teacher"
+                value="Volodymyr"
+              />
+              <span class="radio-list__text">Volodymyr</span>
+            </label>
+          </fieldset>
+        </section>
+
+        <!-- Main button -->
+        <button
+          class="apply-form__submit main-button"
+          type="submit"
+          name="submit-application-form"
+          aria-label="Submit application form"
+        >
+          Send
+        </button>
+
+        <!-- Footnote -->
+        <p class="apply-form__note">
+          By clicking on "Send" button, you agree to our
+          <a class="apply-form__link" href="#" target="_blank" rel="noopener"
+            >Privacy Policy</a
+          >, and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
 </section>
 
-        <!-- src/partials/reviews.html -->
-<section class="reviews" id="reviews">
-  <!-- TODO: content -->
+        <!-- === REVIEWS SECTION === -->
+<section class="reviews section" id="reviews">
+  <div class="container">
+    <div class="title-container">
+      <h2 class="title-name">
+        What our <span class="underline">students</span> say
+      </h2>
+      <p class="paragraph-reviews">
+        Hear from our students about their learning journey with us, as they
+        share their experiences, progress, and the transformative impact
+      </p>
+    </div>
+
+    <ul class="list-reviews">
+      <!-- CARD 1 -->
+      <li class="item-list">
+        <div class="title-item-list">
+          <picture>
+            <source
+              srcset="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAlgAAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAADIAAAAyAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIABoAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAmBtZGF0EgAKCRgVccWCBAQNCDLIBBgACiiihQDdLKfNp1obgHdN+0IQNOLkXZTDMtB81nofwdXHnBC4DMvJYaZ5+uH+G3xHZVOA3HeZ21gp0G2Pf46PMI6QonP9rJdSrEID2KRYK4BRkRHQuNMHJ4Wr5pMM+X834FzPx5nOb6YIxTYqKBQ0F88EAsM35eRY+FfTutfnbcHDq7x7FWofzTNoXI8WbXI2W8Z/Dnih3LoTxJKVsFfTlL1b/qDMOMDVHxfgEt9wPqba6LI79h/Ga30LlDyRfnxGwVv/t/c7JDY21jiwpl/KckbXlhLdlLF6m52v+eq0PsLebHKkMBLad8fTgmHdt3/CbiiPgLCxWzxCSJopFSKZRNhirKhfVvk3o5xrxYJYRk1Obt2cH1Q2hyqfAFOb7vdavKbjM3ujxUKzs77P/Gz7b/jSPKM0KBKL2lCSAvKG6BJFbw1jnpmbhlVbUlEkcuzuKiEAZcBPmafWIGPM9obi6FM6xt8PgQHfzszwxpxRmsYJTuI5V60i5qMG1ixtWRO2AlkglVARKwWD0dLVmWfO4u4AVA7Ih27PKtW0MyQAsX0Qb1je2ckzuh+eI3g2jdLU+MzarbAQxw2M+lmYYeqxMSlXDJF48xWpZvjCVl+Xk4hP21qEN+khBgpB1ey3FJKkqpz3CmsD/ZF5WaMhxNLjNb/DuR50XQol7p75eZjyW8yKSaQpYw0cYGSaRFO3BJ3KVzdiH1H1ofOBbBgr5sdDFFuheI3NcPTDdcHSj2Oa3RySUiEXQQwTKAWTLaP3Tv0slre1YiIY 1x, data:image/avif;base64,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 2x"
+              type="image/avif"
+            />
+            <source
+              srcset="/html_css_team_project/assets/anna-DUlEMgVt.jpg 1x, /html_css_team_project/assets/anna@2x-BcpSA1SQ.jpg 2x"
+              type="image/jpeg"
+            />
+            <img
+              class="card-img"
+              src="/html_css_team_project/assets/anna-DUlEMgVt.jpg"
+              alt="Photo of Anna"
+              loading="lazy"
+              width="50"
+              height="50"
+            />
+          </picture>
+          <div class="card-info">
+            <h3 class="title-card">Anna</h3>
+            <p class="paragraph-card">Student</p>
+          </div>
+        </div>
+        <p class="text-reviews">
+          My experience at the language school has been nothing short of
+          amazing. The teachers are dedicated and the learning environment is
+          stimulating. I feel more confident in my English skills.
+        </p>
+      </li>
+
+      <!-- CARD 2 -->
+      <li class="item-list">
+        <div class="title-item-list">
+          <picture>
+            <source
+              srcset="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAoQAAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAADIAAAAyAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIABoAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAoxtZGF0EgAKCRgVccWCBAQNCDL0BBgACiiihQDdLKfNp1obgHdN+0HiZgSSIDpg5egdtos7rSSSPuPMrtiMh4EqynUYK3OwsoitHjd8fNhwUKBClV8czN51jZ5wtC7ot1uKobdM+qW3GU9tyS2OJWhUMnrxWF1U81FRfipVmZ5R+t+kBTJXGfqkyPECDHMONzwpHPPU4CNxFhwS0J/yi5o65tEoA8vg38b0fHBgIbjCJQCSUgfSQxJS+KkvJweaQ/xfDbX7V0Az3klFlnLX1Pr31da/SvcnyaoTNnAX9Lwh4+8ycCZ8xxCeLnsDz2CzM+S3IemHThnTnilmkxaFRiN1v2gNzz4YPggVoJSdk3zx0MywYxyplxABq7vreGytpvYEv/fwRZHUNCww0Uvfgw5s9F+vdqG/c78eP0xyqco4ozxMQ61SQDt0B7iXKHNCrWeIOPyjvNSjKB0JjdbBpZRXClhbrXMvWR/NFN7DpK4Dq4egXYNhCw3eCPVMx97nwvl9ByKZ6Bccql/06qjqbUW33I523OgLhwpqci06s0Woz5l65Mf2G5b9ODUIu+NyPnxydV6rpCnTslS7mfDKzKF4HY3k534urIbEam/uCwwblDcJiFnIRtnpPMJrzrdKnJvsDzFBe1hEVUZ/aGtlaCVyk+iPkgVwTFIvA4OdR6eHi85SUbPVvrfWh26bHGlwDQG+3Uwldza8FuzebYeiZ5AMyOC77+/2TYHvY8q4EqEWBjlmPgSleuEdrvz2ngI6QOIBfWkW3WEmk4q7BDEJmj/RQNmUkdEjO7EuPbqcDyEdI0s5CTuO74u/oM0veZg+zw12I6THjtE/Vks6nzzM/uyLBlKN6krmCEA= 1x, data:image/avif;base64,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 2x"
+              type="image/avif"
+            />
+            <source
+              srcset="data:image/jpeg;base64,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 1x, /html_css_team_project/assets/mykhailo@2x-CQBDHYIi.jpg 2x"
+              type="image/jpeg"
+            />
+            <img
+              class="card-img"
+              src="data:image/jpeg;base64,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"
+              alt="Photo of Mykhailo"
+              loading="lazy"
+              width="50"
+              height="50"
+            />
+          </picture>
+          <div class="card-info">
+            <h3 class="title-card">Mykhailo</h3>
+            <p class="paragraph-card">Student</p>
+          </div>
+        </div>
+        <p class="text-reviews">
+          The school offers a great balance of language theory and practical
+          exercises. The personalized feedback from the teachers has helped me
+          improve my weak areas.
+        </p>
+      </li>
+
+      <!-- CARD 3 -->
+      <li class="item-list">
+        <div class="title-item-list">
+          <picture>
+            <source
+              srcset="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAqUAAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAADIAAAAyAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIABoAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAq1tZGF0EgAKCRgVccWCBAQNCDKVBRgACiiihQDdSKnWTqy2KXt952+asOpGhqipvVpTHsjWjDJYdOtORlKd8Ud02ISpFpGylI6cZXs56XqFxxa8aKeua9UUF4E0G3j+aPG+mBTEuYn/LbayXwEGyhf9FUVQi7QRBkIrYbh7VksrVu9Y7LqguET8pgKqVgXTSoWyENjxwVlv49TL7EoBlJiN18/H27V9anyNPur2nBRP8dh1t+xLzpuxkpXkwEukzJ68qY71urUIZBbGD87hErekMZTKcaTif8GFkgAu2nMeUDuXHzStBXuBI31V0ZDMhELddGt46lsOCKdl9v/ahqgr62Cod8Os/vbbwEFZlCLpKYPJcBykB10d28kKCcA4OHcSNs090OFPpjDKb+EuWlB9DC2qO5X0hyWBv7lMxreDUOVe/Qmw0L4z+tVJROVdmr1V4/TmQACYt/rsrSMjYeKKM0Pyi7fJxVdJZg1EsXj6f4cuTQepU3FZq3WOV7nJGLFb3wibJXdzFvlArlTg5Xdf6xWB5HORf81GJoD5FQX5GbOI4mYCXMIxKfZWKL0YXZ/iwTHyweLqfQdNb1BKfqQN/qvZOMGmsY8fvcUtG0Xf859U0IR0k9mtcHTkgvBvLAyPiIxllRZOWYpageQJUVVytE8XLWI/xfRO/N43VeqrRphV59aT77lpJnGUHgRIRwbu/XoQnf4KynbyJPWwnMC9VBT27TEz5R78vM5HAL8PigprQbzeAXbg98SDOUGcXWZlclz4sDlt4paGZUVudaahspH4NmT0OIAuym1V7a/khG2IcN68v0/PNrOZKcU6/+iUl6rAE5yxVBMzgh9lQIB75GHw4vyIN6aJRGV26JcmVU03OcS7HXiDtuS11oDkbWV/IFGRRaU+klc= 1x, data:image/avif;base64,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 2x"
+              type="image/avif"
+            />
+            <source
+              srcset="/html_css_team_project/assets/victoria-CJQjcvq5.jpg 1x, /html_css_team_project/assets/victoria@2x-RKZ0v5UN.jpg 2x"
+              type="image/jpeg"
+            />
+            <img
+              class="card-img"
+              src="/html_css_team_project/assets/victoria-CJQjcvq5.jpg"
+              alt="Photo of Victoria"
+              loading="lazy"
+              width="50"
+              height="50"
+            />
+          </picture>
+          <div class="card-info">
+            <h3 class="title-card">Victoria</h3>
+            <p class="paragraph-card">Student</p>
+          </div>
+        </div>
+        <p class="text-reviews">
+          I love the dynamic and interactive teaching methods used here. It's a
+          great place to learn English in a fun and effective way. I have
+          definitely seen a big improvement in my language skills.
+        </p>
+      </li>
+    </ul>
+  </div>
 </section>
 
 
@@ -255,7 +822,7 @@
 
     <!-- src/partials/footer.html -->
 <footer class="footer" id="footer">
-  <div class="footer-container">
+  <div class="footer-container container">
     <div class="footer-left">
       <div class="footer-logo-wrapper">
         <a class="logo" href="#"
@@ -307,7 +874,7 @@
             class="social-link"
           >
             <svg class="social-icon" width="28" height="28">
-              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#facebook"></use>
+              <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#facebook"></use>
             </svg>
           </a>
         </li>
@@ -319,7 +886,7 @@
             class="social-link"
           >
             <svg class="social-icon" width="28" height="28">
-              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#instagram"></use>
+              <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#instagram"></use>
             </svg>
           </a>
         </li>
@@ -331,7 +898,7 @@
             class="social-link"
           >
             <svg class="social-icon" width="28" height="28">
-              <use href="/html_css_team_project/assets/sprite-CcOD4-pk.svg#youtube"></use>
+              <use href="/html_css_team_project/assets/sprite-BOi5UGpY.svg#youtube"></use>
             </svg>
           </a>
         </li>

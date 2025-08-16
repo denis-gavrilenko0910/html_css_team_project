@@ -1,42 +1,79 @@
 <!-- src/partials/header.html -->
 <header class="header" id="top">
-  <div class="container">
+  <div class="container header-container">
     <nav class="nav-header" aria-label="Main navigation menu">
-      <a class="logo-header" href="./index.html">english<span class="logo-studio">excellence</span>.</a>
+      <a class="logo-header" href="./index.html"
+        >english<span class="logo-studio">excellence</span>.</a
+      >
       <ul class="list-menu">
-        <li><a class="menu current" href="#about">About us</a></li>
-        <li><a class="menu current" href="#lessons">Our lessons</a></li>
-        <li><a class="menu current" href="#teachers">Teachers</a></li>
-        <li><a class="menu current" href="#reviews">Reviews</a></li>
-        <li><a class="menu current" href="#contact">Contact us</a></li>
+        <li><a class="menu current link" href="#about">About us</a></li>
+        <li><a class="menu current link" href="#lessons">Our lessons</a></li>
+        <li><a class="menu current link" href="#teachers">Teachers</a></li>
+        <li><a class="menu current link" href="#reviews">Reviews</a></li>
+        <li><a class="menu current link" href="#contact">Contact us</a></li>
       </ul>
     </nav>
-    <div class="social-link-wrapper">
-      <ul class="mobile-tsl-list">
-        <li class="tsl-list-social-icon">
-          <a href="https://www.facebook.com/goITclub/" class="tsl-item" target="_blank" rel="noopener">
-            <svg width="26" height="26" class="tsl-svg" aria-label="We are on Facebook">
-              <use href="{=$icon-path}#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="tsl-list-social-icon">
-          <a href="https://www.instagram.com/goitclub/" class="tsl-item" target="_blank" rel="noopener">
-            <svg width="26" height="26" class="tsl-svg" aria-label="We are on Instagram">
-              <use href="{=$icon-path}#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="tsl-list-social-icon">
-          <a href="https://www.youtube.com/c/GoIT" class="tsl-item" target="_blank" rel="noopener">
-            <svg width="26" height="26" class="tsl-svg" aria-label="We are on Youtube">
-              <use href="{=$icon-path}#youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <button class="burger-btn" type="button" data-modal-open aria-label="Opens the mobile menu">
+
+    <ul class="mobile-tsl-list social-link-wrapper">
+      <li class="tsl-list-social-icon">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          class="tsl-item"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="26"
+            height="26"
+            class="tsl-svg"
+            aria-label="We are on Facebook"
+          >
+            <use href="{=$icon-path}#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="tsl-list-social-icon">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          class="tsl-item"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="26"
+            height="26"
+            class="tsl-svg"
+            aria-label="We are on Instagram"
+          >
+            <use href="{=$icon-path}#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="tsl-list-social-icon">
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          class="tsl-item"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="26"
+            height="26"
+            class="tsl-svg"
+            aria-label="We are on Youtube"
+          >
+            <use href="{=$icon-path}#youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button
+      class="burger-btn"
+      type="button"
+      data-modal-open
+      aria-label="Opens the mobile menu"
+    >
       <svg class="burger-icon" width="32" height="32">
         <use href="{=$icon-path}#burger"></use>
       </svg>
@@ -44,7 +81,12 @@
   </div>
   <div class="backdrop" data-modal>
     <div class="modal">
-      <button class="modal-btn-close" type="button" data-modal-close aria-label="Close the mobile menu">
+      <button
+        class="modal-btn-close"
+        type="button"
+        data-modal-close
+        aria-label="Close the mobile menu"
+      >
         <svg class="modal-icon-close" width="32" height="32">
           <use href="{=$icon-path}#icon-x"></use>
         </svg>
@@ -52,31 +94,67 @@
       <nav class="mobile-menu-nav" aria-label="Mobile navigation menu">
         <ul class="mobile-list-menu">
           <li><a class="mobile-menu-item link" href="#about">About us</a></li>
-          <li><a class="mobile-menu-item link" href="#lessons">Our lessons</a></li>
-          <li><a class="mobile-menu-item link" href="#teachers">Teachers</a></li>
+          <li>
+            <a class="mobile-menu-item link" href="#lessons">Our lessons</a>
+          </li>
+          <li>
+            <a class="mobile-menu-item link" href="#teachers">Teachers</a>
+          </li>
           <li><a class="mobile-menu-item link" href="#reviews">Reviews</a></li>
-          <li><a class="mobile-menu-item link" href="#contact">Contact us</a></li>
+          <li>
+            <a class="mobile-menu-item link" href="#contact">Contact us</a>
+          </li>
         </ul>
       </nav>
       <div>
         <ul class="mobile-tsl-list">
           <li class="tsl-list-social-icon">
-            <a href="https://www.facebook.com/goITclub/" class="tsl-item" target="_blank" rel="noopener">
-              <svg width="26" height="26" class="tsl-svg" aria-label="We are on Facebook">
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="tsl-item"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="26"
+                height="26"
+                class="tsl-svg"
+                aria-label="We are on Facebook"
+              >
                 <use href="{=$icon-path}#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="tsl-list-social-icon">
-            <a href="https://www.instagram.com/goitclub/" class="tsl-item" target="_blank" rel="noopener">
-              <svg width="26" height="26" class="tsl-svg" aria-label="We are on Instagram">
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="tsl-item"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="26"
+                height="26"
+                class="tsl-svg"
+                aria-label="We are on Instagram"
+              >
                 <use href="{=$icon-path}#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="tsl-list-social-icon">
-            <a href="https://www.youtube.com/c/GoIT" class="tsl-item" target="_blank" rel="noopener">
-              <svg width="26" height="26" class="tsl-svg" aria-label="We are on Youtube">
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="tsl-item"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="26"
+                height="26"
+                class="tsl-svg"
+                aria-label="We are on Youtube"
+              >
                 <use href="{=$icon-path}#youtube"></use>
               </svg>
             </a>

@@ -5,12 +5,15 @@
   |============================
 */
 
+
 /* Common styles */
 
 @import url('./reset.css');
+@import url('./animations.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
+@import url('./section.css');
+@import url('./transition.css');
 
 /* Sections style */
 
@@ -19,5 +22,7 @@
 @import url('./about.css');
 @import url('./lessons.css');
 @import url('./proposal.css');
+@import url('./teachers.css');
+@import url('./contact.css');
+@import url('./reviews.css');
 @import url('./footer.css');
-

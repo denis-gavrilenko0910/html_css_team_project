@@ -1,0 +1,114 @@
+.teachers {
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.teachers-title {
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    color: #121417;
+    margin-bottom: 16px;
+}
+
+.teachers-subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(18, 20, 23, 0.5);
+    max-width: 709px;
+    margin: 0 auto 32px;
+    text-align: center;
+    gap: 16px;
+}
+
+.teacher-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.teacher-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teacher-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teacher-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Background colors from your design */
+
+.bg-green {
+    background-color: #BEE8CC;
+}
+
+.bg-pink {
+    background-color: #D4B2AF;
+}
+
+.bg-yellow {
+    background-color: #DFCC9F;
+}
+
+.bg-lightgreen {
+    background-color: #D1DFC3;
+}
+
+.teacher-name {
+    font-size: 20px;
+    margin-top: 16px;
+    color: #121417;
+}
+
+.teacher-desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(18, 20, 23, 0.5);
+    margin-top: 8px;
+}
+
+@media (min-width: 375px) {
+    .teachers-title {
+        font-size: 32px;
+    }
+
+    .teachers-title .underline::after {
+        height: 18px;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+    .teacher-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+
+/* Desktop */
+
+@media (min-width: 1280px) {
+    .teacher-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+}

@@ -1,0 +1,209 @@
+:root {
+  --black: #121417;
+  --white: #ffffff;
+  --gray: #f3f5f6;
+  --green: #4dc274;
+  --light-green: #bee8cc;
+}
+
+
+/* ===== REVIEWS SECTION BASE STYLES ===== */
+
+.reviews {
+  text-align: center;
+}
+
+
+/* ===== TEXT STYLES ===== */
+
+
+/* Section title */
+
+.title-name {
+  font-size: 32px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+
+/* Tablet devices and Desktop devices */
+
+@media only screen and (min-width: 768px) {
+  .underline {
+    top: 31px;
+    height: 20px;
+    transform: translateY(-2px);
+  }
+}
+
+
+/* Subtitle */
+
+.paragraph-reviews {
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 64px;
+  line-height: 171%;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  max-width: 709px;
+  margin: 0 auto 40px;
+}
+
+
+/* Cards list container */
+
+.list-reviews {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 32px;
+  padding: 0 20px;
+  margin: 0;
+  list-style: none;
+}
+
+
+/* Card element */
+
+.item-list {
+  flex-shrink: 0;
+  flex-basis: 90%;
+  padding: 20px;
+  background-color: var(--gray);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Top part of the card: avatar + name + role */
+
+.title-item-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  background-color: var(--green);
+  border-radius: 15px;
+  max-width: 288px;
+  width: 100%;
+  max-height: 78px;
+  height: auto;
+}
+
+
+/* Avatar image */
+
+.card-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+/* Container for name and role */
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* Name */
+
+.title-card {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin: 0;
+}
+
+
+/* Role/Status */
+
+.paragraph-card {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+
+/* Review text */
+
+.text-reviews {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: rgba(18, 20, 23, 0.5);
+  text-align: left;
+}
+
+
+/* ===== MEDIA QUERIES ===== */
+
+
+/* TABLET ≥768px */
+
+@media screen and (min-width: 768px) {
+  .title-name {
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .paragraph-reviews {
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 64px;
+  }
+
+  .text-reviews {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  /* Cards grid: 2 columns */
+  .list-reviews {
+    padding: 0 32px;
+  }
+
+  .item-list {
+    padding: 32px 16px;
+    flex-basis: calc(50% - 16px);
+  }
+
+  .title-item-list {
+    margin-bottom: 32px;
+    max-width: none;
+    width: 100%;
+  }
+}
+
+
+/* DESKTOP ≥1280px */
+
+@media screen and (min-width: 1280px) {
+
+  /* Cards grid: 3 columns */
+  .list-reviews {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .item-list {
+    flex-basis: calc(33.333% - 21.333px);
+  }
+}

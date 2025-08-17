@@ -50,22 +50,38 @@ body {
 }
 
 #about,
-.teachers {
+#teachers {
   padding-top: 80px;
 }
 
 @media screen and (min-width: 768px) {
 
-  .teachers,
-  .about {
+  #teachers,
+  #about {
     padding-top: 100px;
   }
 }
 
 @media screen and (min-width: 1280px) {
 
-  .teachers,
-  .about {
+  #teachers,
+  #about {
     padding-top: 150px;
+  }
+}
+
+#lessons {
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  #lessons {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #lessons {
+    padding-bottom: 150px;
   }
 }

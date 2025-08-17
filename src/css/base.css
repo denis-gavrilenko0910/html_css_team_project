@@ -63,9 +63,11 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-
-  #teachers,
   #about {
+    padding-top: 96px;
+  }
+
+  #teachers {
     padding-top: 150px;
   }
 }

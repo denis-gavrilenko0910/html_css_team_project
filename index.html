@@ -19,7 +19,7 @@
     />
     <title>English Excellence</title>
     <script type="module" crossorigin src="/html_css_team_project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/html_css_team_project/assets/index-BulK_RRv.css">
+    <link rel="stylesheet" crossorigin href="/html_css_team_project/assets/index-CnaOFtd_.css">
   </head>
 
   <body>
@@ -589,7 +589,7 @@
       </div>
 
       <!-- Right: Form -->
-      <form class="apply-form" action="#" method="post" novalidate>
+      <form class="apply-form" action="#" method="post">
         <div class="apply-form__fields inputs">
           <div class="inputs__group">
             <label class="inputs__label" for="name">Name</label>
@@ -612,6 +612,9 @@
               name="email"
               placeholder="Email"
               required
+              autocomplete="email"
+              inputmode="email"
+              pattern="^[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,24}$"
             />
           </div>
 
@@ -623,6 +626,7 @@
               id="phone"
               name="phone"
               placeholder="Phone"
+              pattern="\+?[0-9\s\-]{7,15}"
             />
           </div>
 

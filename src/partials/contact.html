@@ -166,25 +166,6 @@
           >, and allow Promodo to use this information for marketing purposes.
         </p>
       </form>
-      <script>
-        (function () {
-          const form = document.querySelector('.apply-form');
-          form.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            if (!form.checkValidity()) {
-              form.reportValidity();
-              return;
-            }
-
-            const data = Object.fromEntries(new FormData(form).entries());
-            // TODO: Зробити реальний fetch на бекенд або сервіс
-
-            form.reset();
-            alert('Thank you! Your application has been submitted.');
-          });
-        })();
-      </script>
     </div>
   </div>
 </section>

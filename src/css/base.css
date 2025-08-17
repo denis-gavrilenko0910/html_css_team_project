@@ -48,3 +48,24 @@ body {
     height: 20px;
   }
 }
+
+#about,
+.teachers {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .teachers,
+  .about {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .teachers,
+  .about {
+    padding-top: 150px;
+  }
+}

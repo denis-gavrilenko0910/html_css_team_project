@@ -238,7 +238,8 @@
   justify-content: center;
   flex-direction: row;
   border-radius: 12px;
-  min-width: 295px;
+  width: 100%;
+  max-width: 295px;
   height: 52px;
   color: #fff;
 }

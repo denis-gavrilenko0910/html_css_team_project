@@ -15,16 +15,22 @@
       <!-- Left: Promo card with image and stats -->
       <article class="promo-card">
         <div class="promo-card__media">
-          <img
-            class="promo-card__image"
-            src="./img/leave-application.png"
-            srcset="./img/leave-application.png 1x,
-              ./img/leave-application@2x.png 2x"
-            alt="Student learning English online"
-            width="492"
-            height="392"
-            loading="lazy"
-          />
+          <picture>
+            <source
+              srcset="/img/leave-application@2x.png 2x"
+              type="image/png"
+              media="(min-width: 1280px)"
+            />
+            <!-- Фолбек для старих браузерів -->
+            <img
+              class="promo-card__image"
+              src="/img/leave-application.png"
+              alt="Student learning English online"
+              width="492"
+              height="392"
+              loading="lazy"
+            />
+          </picture>
         </div>
 
         <div class="promo-card__stat">

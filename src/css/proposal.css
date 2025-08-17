@@ -131,7 +131,8 @@
 }
 
 .apply_button {
-  width: 255px;
+  width: 100%;
+  max-width: 255px;
   height: 48px;
   background-color: #4CAF50;
   border-radius: 8px;
@@ -231,7 +232,8 @@
   }
 
   .package_master {
-    font-size: 48px;
+    width: 760px;
+    font-size: 60px;
     margin-bottom: 132px;
   }
 

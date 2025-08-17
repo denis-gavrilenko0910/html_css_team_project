@@ -36,7 +36,8 @@
 
 .btn-leave-app {
   display: flex;
-  width: 295px;
+  width: 100%;
+  max-width: 295px;
   height: 52px;
   border: none;
   cursor: pointer;

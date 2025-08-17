@@ -25,13 +25,21 @@
   text-align: left;
 }
 
+.expert {
+  letter-spacing: -0.08em;
+}
+
 .about-text {
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.02em;
   text-align: left;
   color: #121417;
   margin-bottom: 40px;
+}
+
+.comprehensive {
+  letter-spacing: -0.08em;
 }
 
 .about-content-wrapper {
@@ -106,7 +114,8 @@
     line-height: 167%;
   }
 
-  .about-text {
+  .about-text,
+  .comprehensive {
     letter-spacing: -0.02em;
   }
 

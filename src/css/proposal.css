@@ -162,6 +162,11 @@
     padding: 60px 0;
   }
 
+  .package_master {
+    font-size: 60px;
+    line-height: 117%;
+  }
+
   .proposal_title {
     margin-bottom: 32px;
     font-size: 40px;

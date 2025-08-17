@@ -85,3 +85,29 @@ body {
     padding-bottom: 150px;
   }
 }
+
+.current {
+  position: relative;
+  transition: transform 250ms ease;
+}
+
+.current::after,
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 37px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff00;
+}
+
+.nav-link::after {
+  bottom: -7px;
+}
+
+.current:hover::after,
+.current:focus::after {
+  background-color: #4DC274;
+}

@@ -182,7 +182,7 @@
   }
 
   .power_of_english {
-    padding: 60px 40px;
+    padding: 38px 32px;
     display: flex;
   }
 
@@ -195,6 +195,7 @@
   .check_mark_cont {
     width: 28px;
     height: 28px;
+    margin-right: 16px;
   }
 
   .check_mark {

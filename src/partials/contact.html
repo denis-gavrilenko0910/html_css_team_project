@@ -43,7 +43,7 @@
       </div>
 
       <!-- Right: Form -->
-      <form class="apply-form" action="#" method="post" novalidate>
+      <form class="apply-form" action="#" method="post">
         <div class="apply-form__fields inputs">
           <div class="inputs__group">
             <label class="inputs__label" for="name">Name</label>
@@ -66,6 +66,9 @@
               name="email"
               placeholder="Email"
               required
+              autocomplete="email"
+              inputmode="email"
+              pattern="^[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,24}$"
             />
           </div>
 
@@ -77,6 +80,7 @@
               id="phone"
               name="phone"
               placeholder="Phone"
+              pattern="\+?[0-9\s\-]{7,15}"
             />
           </div>
 
@@ -162,6 +166,25 @@
           >, and allow Promodo to use this information for marketing purposes.
         </p>
       </form>
+      <script>
+        (function () {
+          const form = document.querySelector('.apply-form');
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            if (!form.checkValidity()) {
+              form.reportValidity();
+              return;
+            }
+
+            const data = Object.fromEntries(new FormData(form).entries());
+            // TODO: Зробити реальний fetch на бекенд або сервіс
+
+            form.reset();
+            alert('Thank you! Your application has been submitted.');
+          });
+        })();
+      </script>
     </div>
   </div>
 </section>

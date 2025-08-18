@@ -119,8 +119,8 @@
 }
 
 .check_mark {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   fill: #FFFFFF;
 }
 
@@ -199,9 +199,8 @@
   }
 
   .check_mark {
-    width: 16px;
-    height: 16px;
-    fill: #FFFFFF;
+    width: 14px;
+    height: 14px;
   }
 
   .apply_button {
@@ -225,7 +224,8 @@
   .proposal {
     max-width: 1182px;
     margin: 0 auto;
-    padding: 75px 0;
+    padding: 64px 0;
+    padding-bottom: 140px;
   }
 
   .package_content {
@@ -266,17 +266,5 @@
 
   .proposal_list {
     margin-bottom: 40px;
-  }
-
-  .check_mark_cont {
-    width: 28px;
-    height: 28px;
-    fill: #FFFFFF;
-  }
-
-  .check_mark {
-    width: 16px;
-    height: 16px;
-    fill: #FFFFFF;
   }
 }

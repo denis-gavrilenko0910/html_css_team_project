@@ -63,6 +63,26 @@
 
 /* Поля */
 
+/* Відключаємо підсвічування рамки на hover */
+.inputs__control:hover,
+textarea.inputs__control:hover {
+  border-color: inherit;
+  box-shadow: none;
+}
+
+/* Зберігаємо валідаційні стани */
+.inputs__control:required:invalid:hover {
+  border-color: #e74c3c;  /* червоний */
+}
+
+.inputs__control:required:valid:hover {
+  border-color: #4DC274;  /* зелений */
+}
+
+textarea.inputs__control {
+  resize: none;
+}
+
 .inputs__control {
   width: 100%;
   padding: 14px 16px;
